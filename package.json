@@ -2,31 +2,40 @@
   "name": "pink",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "Личный проект «Пинк»",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x",
-    "autoprefixer": "6.7.x",
-    "grunt": "1.0.1",
-    "grunt-browser-sync": "2.2.0",
-    "grunt-contrib-less": "1.4.0",
-    "grunt-contrib-watch": "1.0.0",
-    "grunt-postcss": "0.8.0",
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1",
     "htmlhint": "^0.15.1"
   },
   "scripts": {
-    "test": "htmlhint *.html",
-    "build": "grunt less && grunt postcss",
-    "start": "npm run build && grunt serve"
+    "test": "htmlhint *.html"
   },
   "editorconfig-cli": [
     "*.html",
     "*.json",
     "*.js",
     "js/**/*.js",
-    "img/**/*.svg",
-    "less/**/*.less"
+    "img/**/*.svg"
   ],
   "engines": {
     "node": "6.10"
-  }
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "sass": "^1.37.5"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laskovdmit/6-pink.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laskovdmit/6-pink/issues"
+  },
+  "homepage": "https://github.com/laskovdmit/6-pink#readme"
 }
