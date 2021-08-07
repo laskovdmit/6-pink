@@ -1,0 +1,46 @@
+// .contacts {
+//   font: inherit;
+// }
+
+.contacts__wrapper {
+  padding: 48px 20px;
+}
+
+.contacts__item {
+  padding-bottom: 30px;
+}
+
+.contacts__title {
+  color: $second-color;
+
+  display: block;
+  text-align: center;
+}
+
+.contacts__subtitle {
+  color: $main-color;
+
+  margin-bottom: 10px;
+}
+
+.contacts__list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 45px;
+}
+
+.contacts__map {
+  background-color: #888;
+
+  height: 200px;
+
+  position: relative;
+}
+
+.contacts__map-icon {
+  position: absolute;
+  bottom: calc(50% - 30px);
+  left: calc(50% - 18px);
+}

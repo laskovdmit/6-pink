@@ -1,0 +1,23 @@
+// .pagephoto-header {
+//   font: inherit;
+// }
+
+.pagephoto-header__wrapper {
+  background-color: $main-color;
+  box-shadow: 0 1px 0 #000;
+
+  padding: 20px;
+  margin-bottom: 1px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// .pagephoto-header__logo {
+//   font: inherit;
+// }
+
+// .pagephoto-header__navigation {
+//   font: inherit;
+// }

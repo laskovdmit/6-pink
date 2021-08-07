@@ -1,0 +1,93 @@
+.editor {
+  background-color: $bg-color;
+}
+
+// .editor__wrapper {
+//   font: inherit;
+// }
+
+.editor__window {
+  padding: 20px;
+}
+
+.editor__img {
+  display: block;
+}
+
+// .editor__form {
+//   font: inherit;
+// }
+
+.editor__tools {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editor__size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 25px;
+}
+
+// .editor__crop {
+//   font: inherit;
+// }
+
+// .editor__crop-label {
+//   font: inherit;
+// }
+
+// .editor__color {
+//   font: inherit;
+// }
+
+// .editor__color-label {
+//   font: inherit;
+// }
+
+// .editor__bright {
+//   font: inherit;
+// }
+
+// .editor__bright-label {
+//   font: inherit;
+// }
+
+.editor__buttons {
+  border-top: 1px solid #dddfe0;
+  padding: 38px 0;
+}
+
+.editor__button {
+  width: 100%;
+  border: 3px solid $main-color-10;
+  border-radius: 29px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+
+  padding: 17px;
+
+  &--post {
+    margin-bottom: 12px;
+
+    color: $second-color;
+    border-color: $second-color;
+  }
+
+  &--cancel {
+    color: #dddfe0;
+  }
+}
+
+.editor__container {
+  padding-left: 20px;
+  padding-right: 20px;
+}

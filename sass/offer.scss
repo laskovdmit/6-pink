@@ -1,0 +1,58 @@
+.offer {
+  background-color: $main-color;
+
+  padding: 28px 20px;
+}
+
+.offer__button {
+  text-align: center;
+  color: #fff;
+
+  border: 3px solid #fff;
+  border-radius: 28px;
+
+  width: 100%;
+  height: 55px;
+
+  margin-bottom: 30px;
+}
+
+.offer__platform-list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// .offer__platform {
+//   font: inherit;
+// }
+
+// .offer__img {
+//   font: inherit;
+// }
+
+// .offer__img--ios {
+//   font: inherit;
+// }
+
+// .offer__img--android {
+//   font: inherit;
+// }
+
+// .offer__img--windows {
+//   font: inherit;
+// }
+
+.offer__descr {
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+
+  margin-top: 24px;
+  margin-bottom: 6px;
+}

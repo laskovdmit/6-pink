@@ -1,0 +1,28 @@
+// .pagephoto-main {
+//   font: inherit;
+// }
+
+.pagephoto-main__banner {
+  background-image: url('/img/bg-back-mobile@1x.jpg');
+  background-position: center;
+  min-height: 135px;
+
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.pagephoto-main__title {
+  color: #fff;
+}
+
+.pagephoto-main__challenge {
+  padding: 50px 20px;
+}
+
+.pagephoto-main__challenge-title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $main-color;
+}
