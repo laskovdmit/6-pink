@@ -1,0 +1,36 @@
+// .panorama {
+//   font: inherit;
+// }
+
+.panorama__photo {
+  background-image: url('/img/panorama-mobile@1x.jpg');
+  background-repeat: no-repeat;
+
+  width: 320px;
+  height: 137px;
+
+  position: relative;
+}
+
+.panorama__subtitle-wrapper {
+  position: absolute;
+  right: 20px;
+
+  margin: 0;
+  padding: 10px 20px;
+
+  background-color: $second-color;
+}
+
+.panorama__subtitle {
+  font-size: 12px;
+  line-height: 24px;
+  color: #fff;
+}
+
+// .panorama__img {
+// }
+
+.panorama__comment {
+  padding: 0 20px;
+}

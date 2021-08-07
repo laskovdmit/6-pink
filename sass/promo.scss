@@ -1,0 +1,23 @@
+// .promo {
+//   font: inherit;
+// }
+
+.promo__photo-wrapper {
+  min-height: 400px;
+
+  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+}
+
+.promo__img-phone {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 160px);
+}
+
+// .promo__offer {
+//   font: inherit;
+// }
