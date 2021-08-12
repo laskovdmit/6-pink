@@ -1,6 +1,8 @@
-// .pagephoto-header {
-//   font: inherit;
-// }
+.pagephoto-header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
 
 .pagephoto-header__wrapper {
   background-color: $main-color;
@@ -21,3 +23,28 @@
 // .pagephoto-header__navigation {
 //   font: inherit;
 // }
+
+
+@media (min-width: $desktop-width) {
+  .pagephoto-header {
+    background-color: rgb(0, 0, 0, 0.3);
+
+    height: 110px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .pagephoto-header__container {
+    width: 960px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pagephoto-header__wrapper {
+    background-color: transparent;
+  }
+}

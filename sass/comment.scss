@@ -23,6 +23,9 @@
 
 .comment__like {
   margin-top: 18px;
+
+  display: flex;
+  align-items: center;
 }
 
 .comment__like-btn {
@@ -35,3 +38,19 @@
 }
 
 
+@media (min-width: $tablet-width) {
+  .comment {
+    padding: 30px 25px;
+    min-height: 115px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .comment__like {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+}

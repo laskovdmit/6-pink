@@ -8,16 +8,18 @@
 
   width: 320px;
   height: 137px;
+}
 
-  position: relative;
+.panorama__wrapper {
+  padding: 0 20px;
 }
 
 .panorama__subtitle-wrapper {
-  position: absolute;
-  right: 20px;
+  width: 102px;
 
   margin: 0;
-  padding: 10px 20px;
+  margin-left: auto;
+  padding: 8px 20px;
 
   background-color: $second-color;
 }
@@ -31,6 +33,67 @@
 // .panorama__img {
 // }
 
-.panorama__comment {
-  padding: 0 20px;
+// .panorama-comment {
+// }
+
+@media (min-width: $tablet-width) {
+  .panorama__photo {
+    background-image: url('/img/panorama-tablet.jpg');
+
+    width: 660px;
+    height: 510px;
+  }
+
+  .panorama__wrapper {
+    padding-top: 60px;
+  }
+
+  .panorama-comment {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    min-height: auto;
+
+    padding: 25px 30px;
+  }
+
+  .panorama-comment__content {
+    order: 1;
+  }
+
+  .panorama-comment__like {
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    .comment__like-btn {
+      margin: 0;
+      margin-left: 20px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .panorama__photo {
+    background-image: url('/img/panorama-desktop.jpg');
+
+    width: 1200px;
+    height: 506px;
+    margin: 0 auto;
+  }
+
+  .panorama__container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .panorama__wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
 }

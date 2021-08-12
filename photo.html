@@ -10,169 +10,161 @@
 </head>
 <body class="pagephoto">
   <header class="pagephoto-header">
-    <div class="pagephoto-header__wrapper">
-      <a href="#" class="logo pagephoto-header__logo">
-        <img class="logo__desktop visually-hidden" src="http://placehold.it/147x40" width="147px" height="40px" alt="Логотип">
-        <img class="logo__mobile" src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип">
-      </a>
-      <button class="navigation__burger" type="button"></button>
-  </div>
-    <nav class="navigation pagephoto-header__navigation">
-      <ul class="navigation__list site-list">
-        <li class="site-list__item subtitle"><a href="#">Главная</a></li>
-        <li class="site-list__item subtitle"><a href="#">Фотографии</a></li>
-        <li class="site-list__item subtitle"><a href="#">Конкурс</a></li>
-        <li class="site-list__item subtitle"><a href="#">Dmitry</a></li>
-      </ul>
-    </nav>
+    <div class="pagephoto-header__container">
+      <div class="pagephoto-header__wrapper container">
+        <a href="#" class="logo pagephoto-header__logo">
+          <img class="logo__desktop" src="img/logotype-white-desktop.png" width="147px" height="40px" alt="Логотип">
+          <img class="logo__tablet" src="img/logotype-white-tablet.png" width="147px" height="40px" alt="Логотип">
+          <img class="logo__mobile" src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип">
+        </a>
+        <button class="navigation__burger" type="button"></button>
+      </div>
+      <nav class="navigation pagephoto-header__navigation">
+        <ul class="navigation__list site-list">
+          <li class="site-list__item container subtitle"><a href="index.html">Главная</a></li>
+          <li class="site-list__item container subtitle"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item container subtitle"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item container subtitle"><a href="https://github.com/laskovdmit" target="blank">Dmitry</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="pagephoto-main">
-    <div class="pagephoto-main__banner">
+    <div class="pagephoto-main__banner container">
       <h1 class="pagephoto-main__title title title--center">Фотографии пользователей</h1>
     </div>
-    <div class="pagephoto-main__challenge">
-      <h2 class="title title--center pagephoto-main__challenge-title">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</h2>
+    <div class="pagephoto-main__challenge container">
+      <h2 class="title title--center pagephoto-main__challenge-title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
     </div>
     <section class="panorama">
       <div class="panorama__photo">
-        <div class="panorama__subtitle-wrapper"><h2 class="panorama__subtitle subtitle">ПАНОРАМА ДНЯ</h2></div>
-        <!-- <img class="panorama__img" src="/img/panorama-mobile@1x.jpg" width="320px" height="137px" alt="Панорама дня"> -->
+        <div class="panorama__wrapper">
+          <div class="panorama__subtitle-wrapper"><h2 class="panorama__subtitle subtitle">ПАНОРАМА ДНЯ</h2></div>
+        </div>
       </div>
-      <div class="panorama__comment">
-        <div class="comment">
-          <div class="comment__header">
+      <div class="panorama__container container">
+        <div class="panorama-comment comment">
+          <div class="panorama-comment__header comment__header">
             <span class="comment__name subtitle">Анна</span>
             <span class="comment__posting-time">(5 минут назад)</span>
           </div>
-          <div class="comment__content">Прыгать или нет? Напишите в комментарии свои совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</div>
-          <div class="comment__like">
-            <label class="comment__like-count">
-              <input class="comment__like-btn" type="checkbox" name="like">
-              НРАВИТСЯ: 215
-            </label>
+          <div class="panorama-comment__content comment__content">Прыгать или нет? Напишите в комментарии свои совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</div>
+          <div class="panorama-comment__like comment__like">
+            <input class="comment__like-btn" type="checkbox" name="like">
+            <label class="comment__like-count">НРАВИТСЯ: 215</label>
           </div>
         </div>
       </div>
     </section>
-    <section class="all-photos">
+    <section class="all-photos container">
       <h2 class="visually-hidden">Все фотографии</h2>
-      <div class="all-photos__item">
-        <div class="all-photos__photo">
-          <img class="all-photos__img" src="/img/photo-1-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Левон">
-        </div>
-        <div class="all-photos__comment comment">
-          <div class="comment__header">
-            <span class="comment__name subtitle">Левон</span>
-            <span class="comment__posting-time">(5 часов назад)</span>
+      <div class="all-photos__wrapper">
+        <div class="all-photos__item">
+          <div class="all-photos__photo">
+            <img class="all-photos__img" src="/img/photo-1-mobile@1x.jpg" alt="Автор - Левон">
           </div>
-          <div class="comment__content">Вчера он на луну летал, сегодня в руки к нам попал.</div>
-          <div class="comment__like">
-            <label class="comment__like-count">
+          <div class="all-photos__comment comment">
+            <div class="comment__header">
+              <span class="comment__name subtitle">Левон</span>
+              <span class="comment__posting-time">(5 часов назад)</span>
+            </div>
+            <div class="comment__content">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+            <div class="comment__like">
               <input class="comment__like-btn" type="checkbox" name="like">
-              НРАВИТСЯ: 356
-            </label>
+              <label class="comment__like-count">НРАВИТСЯ: 356</label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="all-photos__item">
-        <div class="all-photos__photo">
-          <img class="all-photos__img" src="/img/photo-2-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Антон">
-        </div>
-        <div class="all-photos__comment comment">
-          <div class="comment__header">
-            <span class="comment__name subtitle">Антон</span>
-            <span class="comment__posting-time">(12 часов назад)</span>
+        <div class="all-photos__item">
+          <div class="all-photos__photo">
+            <img class="all-photos__img" src="/img/photo-2-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Антон">
           </div>
-          <div class="comment__content">Соседи будут рады!</div>
-          <div class="comment__like">
-            <label class="comment__like-count">
+          <div class="all-photos__comment comment">
+            <div class="comment__header">
+              <span class="comment__name subtitle">Антон</span>
+              <span class="comment__posting-time">(12 часов назад)</span>
+            </div>
+            <div class="comment__content">Соседи будут рады!</div>
+            <div class="comment__like">
               <input class="comment__like-btn" type="checkbox" name="like">
-              НРАВИТСЯ: 666
-            </label>
+              <label class="comment__like-count">НРАВИТСЯ: 666</label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="all-photos__item">
-        <div class="all-photos__photo">
-          <img class="all-photos__img" src="/img/photo-3-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Борис">
-        </div>
-        <div class="all-photos__comment comment">
-          <div class="comment__header">
-            <span class="comment__name subtitle">Борис</span>
-            <span class="comment__posting-time">(20 часов назад)</span>
+        <div class="all-photos__item">
+          <div class="all-photos__photo">
+            <img class="all-photos__img" src="/img/photo-3-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Борис">
           </div>
-          <div class="comment__content">Здесь могла быть ваша цитата о высоком и вечном.</div>
-          <div class="comment__like">
-            <label class="comment__like-count">
+          <div class="all-photos__comment comment">
+            <div class="comment__header">
+              <span class="comment__name subtitle">Борис</span>
+              <span class="comment__posting-time">(20 часов назад)</span>
+            </div>
+            <div class="comment__content">Здесь могла быть ваша цитата о высоком и вечном.</div>
+            <div class="comment__like">
               <input class="comment__like-btn" type="checkbox" name="like">
-              НРАВИТСЯ: 215
-            </label>
+              <label class="comment__like-count">НРАВИТСЯ: 215</label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="all-photos__item">
-        <div class="all-photos__photo">
-          <img class="all-photos__img" src="/img/photo-4-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Сергей">
-        </div>
-        <div class="all-photos__comment comment">
-          <div class="comment__header">
-            <span class="comment__name subtitle">Сергей</span>
-            <span class="comment__posting-time">(25 часов назад)</span>
+        <div class="all-photos__item">
+          <div class="all-photos__photo">
+            <img class="all-photos__img" src="/img/photo-4-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Сергей">
           </div>
-          <div class="comment__content">Самая кубанская в мире!</div>
-          <div class="comment__like">
-            <label class="comment__like-count">
+          <div class="all-photos__comment comment">
+            <div class="comment__header">
+              <span class="comment__name subtitle">Сергей</span>
+              <span class="comment__posting-time">(25 часов назад)</span>
+            </div>
+            <div class="comment__content">Самая кубанская в мире!</div>
+            <div class="comment__like">
               <input class="comment__like-btn" type="checkbox" name="like">
-              НРАВИТСЯ: 4
-            </label>
+              <label class="comment__like-count">НРАВИТСЯ: 4</label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="all-photos__item">
-        <div class="all-photos__photo">
-          <img class="all-photos__img" src="/img/photo-5-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Максим">
-        </div>
-        <div class="all-photos__comment comment">
-          <div class="comment__header">
-            <span class="comment__name subtitle">Максим</span>
-            <span class="comment__posting-time">(40 часов назад)</span>
+        <div class="all-photos__item">
+          <div class="all-photos__photo">
+            <img class="all-photos__img" src="/img/photo-5-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Максим">
           </div>
-          <div class="comment__content">Где снег-то?</div>
-          <div class="comment__like">
-            <label class="comment__like-count">
+          <div class="all-photos__comment comment">
+            <div class="comment__header">
+              <span class="comment__name subtitle">Максим</span>
+              <span class="comment__posting-time">(40 часов назад)</span>
+            </div>
+            <div class="comment__content">Где снег-то?</div>
+            <div class="comment__like">
               <input class="comment__like-btn" type="checkbox" name="like">
-              НРАВИТСЯ: 150
-            </label>
+              <label class="comment__like-count">НРАВИТСЯ: 150</label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="all-photos__item">
-        <div class="all-photos__photo">
-          <img class="all-photos__img" src="/img/photo-6-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Надежда">
-        </div>
-        <div class="all-photos__comment comment">
-          <div class="comment__header">
-            <span class="comment__name subtitle">Надежда</span>
-            <span class="comment__posting-time">(45 часов назад)</span>
+        <div class="all-photos__item">
+          <div class="all-photos__photo">
+            <img class="all-photos__img" src="/img/photo-6-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Надежда">
           </div>
-          <div class="comment__content">Всем GM и взаимные лайки!</div>
-          <div class="comment__like">
-            <label class="comment__like-count">
+          <div class="all-photos__comment comment">
+            <div class="comment__header">
+              <span class="comment__name subtitle">Надежда</span>
+              <span class="comment__posting-time">(45 часов назад)</span>
+            </div>
+            <div class="comment__content">Всем GM и взаимные лайки!</div>
+            <div class="comment__like">
               <input class="comment__like-btn" type="checkbox" name="like">
-              НРАВИТСЯ: 2560
-            </label>
+              <label class="comment__like-count">НРАВИТСЯ: 2560</label>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="pagephoto-main__challenge">
-      <h2 class="title title--center pagephoto-main__challenge-title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
+    <div class="pagephoto-main__challenge container">
+      <h2 class="pagephoto-main__challenge-title title title--center">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
     </div>
     <section class="editor">
       <h2 class="visually-hidden">Фото-редактор</h2>
-      <div class="editor__wrapper">
+      <div class="editor__wrapper container">
         <div class="editor__window">
-          <img class="editor__img" src="/img/photo-7-mobile@1x.jpg" width="280px" height="374px" alt="Рабочая область">
+          <img class="editor__img" src="/img/photo-7-mobile@1x.jpg" alt="Рабочая область">
         </div>
         <form class="editor__form" method="post" action="https://echo.htmlacademy.ru">
           <div class="editor__tools editor__container">
@@ -195,9 +187,11 @@
     </section>
   </main>
   <footer class="pagephoto-footer">
-    <div class="pagephoto-footer__wrapper">
+    <div class="pagephoto-footer__wrapper container">
       <a href="#" class=" logo">
-        <img class="pagephoto-footer__logo logo__desktop" src="/img/logo-pink-blue-mobile.svg" width="147px" height="40px" alt="Логотип">
+        <img class="logo__desktop" src="img/logo-pink-blue-mobile.svg" width="147px" height="40px" alt="Логотип">
+        <img class="logo__tablet" src="img/logo-pink-blue-mobile.svg" width="147px" height="40px" alt="Логотип">
+        <img class="logo__mobile" src="img/logo-pink-blue-mobile.svg" width="147px" height="40px" alt="Логотип">
       </a>
       <ul class="pagephoto-footer__socials social">
         <li class="social__item">

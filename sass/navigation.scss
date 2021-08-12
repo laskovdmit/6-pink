@@ -20,6 +20,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .navigation__burger {
+    display: none;
+  }
+}
+
 // .navigation__list {
 //   font: inherit;
 // }

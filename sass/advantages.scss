@@ -3,6 +3,7 @@
 }
 
 .advantages__title {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -14,7 +15,6 @@
 }
 
 .advantages__list {
-  background-color: $bg-color;
   list-style: none;
 
   margin: 0;
@@ -22,13 +22,28 @@
 }
 
 .advantages__item {
-  padding: 0 20px;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
 }
 
-// .advantages__item-img {
-//   font: inherit;
-// }
+.advantages__item-wrapper {
+  display: none;
+
+  position: relative;
+
+  height: 300px;
+  overflow: hidden;
+}
+
+.advantages__item-img {
+  display: none;
+}
+
+.advantages__item-layer {
+  position: absolute;
+
+  left: calc(50% - 147px);
+  bottom: -8px;
+}
 
 .advantages__descr {
   text-align: center;
@@ -38,12 +53,129 @@
 }
 
 .advantages__img-wrapper {
-  background-color: $bg-color;
+
   height: 278px;
   overflow: hidden;
 }
 
 .advantages__img {
-  display: block;
+  background-image: url('/img/iphonescreen3mobile.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 157px;
+  height: 330px;
+
   margin: 0 auto;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding-top: 60px;
+  }
+
+  .advantages__title {
+    margin-bottom: 45px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 400px;
+  }
+  .advantages__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+
+    padding-top: 0;
+  }
+
+  .advantages__list {
+    flex-basis: 50%;
+  }
+
+  .advantages__img-wrapper {
+    height: 482px;
+
+    margin-top: -40px;
+    flex-basis: 50%;
+  }
+
+  .advantages__img {
+    background-image: url('/img/iphonescreen3tablet.png');
+
+    width: 268px;
+    height: 547px;
+  }
+
+  .advantages__item-subtitle {
+    text-align: left;
+  }
+
+  .advantages__descr {
+    text-align: left;
+  }
+
+}
+
+
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding-top: 80px;
+  }
+
+  .advantages__title {
+    margin-bottom: 75px;
+
+    width: 600px;
+  }
+
+  .advantages__wrapper {
+    display: block;
+  }
+
+  .advantages__list {
+    width: $desktop-width;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .advantages__item {
+    width: 300px;
+  }
+
+  .advantages__item-wrapper {
+    margin-top: -95px;
+
+    display: block;
+  }
+
+  .advantages__item-img {
+    margin: 0 auto;
+
+    display: block;
+  }
+
+  .advantages__img-wrapper {
+    display: none;
+  }
+
+  .advantages__item-subtitle {
+    margin-top: 58px;
+
+    text-align: center;
+  }
+
+  .advantages__descr {
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+
+
 }

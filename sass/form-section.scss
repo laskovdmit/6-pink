@@ -4,6 +4,7 @@
 
 .form-section__subtitle {
   padding: 0 20px;
+  margin: 0 auto;
 
   font-size: 14px;
   font-weight: 400;
@@ -11,6 +12,39 @@
   color: $main-color;
 }
 
-// .form-section__form {
-//   font: inherit;
-// }
+.form-section__subtitle--hide {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-section {
+    padding-top: 90px;
+  }
+
+  .form-section__subtitle {
+    font-size: 18px;
+
+    width: 500px;
+  }
+
+  .form-section__subtitle--hide {
+    display: inline;
+  }
+
+  .form-section__form {
+    padding-top: 30px;
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .form-section__subtitle {
+    width: 780px;
+  }
+
+  .form-section__form {
+    padding-top: 80px;
+  }
+}

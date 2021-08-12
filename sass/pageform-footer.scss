@@ -3,15 +3,45 @@
 // }
 
 .pageform-footer__wrapper {
-  padding: 40px;
-}
-
-.pageform-footer__logo {
-  display: block;
-  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .pageform-footer__socials {
   margin-top: 40px;
   margin-bottom: 30px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .pageform-footer {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+
+    background-color: #fff;
+  }
+
+  .pageform-footer__wrapper {
+    height: 125px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .pageform-footer__wrapper {
+    width: $desktop-width;
+    height: 200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
