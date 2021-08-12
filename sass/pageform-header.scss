@@ -1,17 +1,45 @@
-// .pageform-header {
-//   font: inherit;
-// }
+.pageform-header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
 
 .pageform-header__wrapper {
   background-color: $main-color;
   box-shadow: 0 1px 0 #000;
 
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 1px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+@media (min-width: $desktop-width) {
+  .pageform-header {
+    background-color: rgb(0, 0, 0, 0.3);
+
+    height: 110px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .pageform-header__container {
+    width: 960px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pageform-header__wrapper {
+    background-color: transparent;
+  }
 }
 
 // .pageform-header__logo {

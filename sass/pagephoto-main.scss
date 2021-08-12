@@ -1,15 +1,19 @@
-// .pagephoto-main {
-//   font: inherit;
-// }
+.pagephoto-main {
+  padding-top: 260px;
+}
 
 .pagephoto-main__banner {
-  background-image: url('/img/bg-back-mobile@1x.jpg');
-  background-position: center;
-  min-height: 135px;
+  background-image: url('/img/bg-back-mobile.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 100px;
 
-  padding-top: 35px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 100px;
+  padding-bottom: 35px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .pagephoto-main__title {
@@ -17,12 +21,69 @@
 }
 
 .pagephoto-main__challenge {
-  padding: 50px 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .pagephoto-main__challenge-title {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
   color: $main-color;
+}
+
+
+@media (min-width: $tablet-width) {
+  .pagephoto-main__banner {
+    min-height: 300px;
+    background-image: url('../img/bg-back-tablet.jpg');
+    background-position: top;
+  }
+
+  .pagephoto-main__title {
+    font-size: 50px;
+    line-height: 60px;
+
+    width: 500px;
+    margin: auto;
+  }
+
+  .pagephoto-main__challenge {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .pagephoto-main__challenge-title {
+    font-size: 18px;
+    line-height: 30px;
+
+    width: 500px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .pagephoto-main {
+    padding-top: 0;
+  }
+
+  .pagephoto-main__banner {
+    min-height: 260px;
+    margin: 0 auto;
+
+    background-image: url('../img/bg-back.jpg');
+    background-position: top;
+  }
+
+  .pagephoto-main__title {
+    width: 780px;
+  }
+
+  .pagephoto-main__challenge {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+
+  .pagephoto-main__challenge-title {
+    width: 700px;
+  }
 }

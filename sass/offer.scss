@@ -1,7 +1,6 @@
 .offer {
-  background-color: $main-color;
-
-  padding: 28px 20px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .offer__button {
@@ -55,4 +54,16 @@
 
   margin-top: 24px;
   margin-bottom: 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .offer__descr {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer__button {
+    font-size: 21px;
+  }
 }

@@ -1,23 +1,101 @@
-// .promo {
-//   font: inherit;
-// }
-
-.promo__photo-wrapper {
-  min-height: 400px;
-
-  background-image: url('../img/bg-back-mobile@1x.jpg');
+.promo {
+  background-image: url('../img/bg-back-mobile.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+}
+
+.promo__wrapper {
+  min-height: 740px;
 
   position: relative;
 }
 
 .promo__img-phone {
   position: absolute;
-  bottom: 0;
+  bottom: 280px;
   left: calc(50% - 160px);
+
+  width: 320px;
+  height: 314px;
+
+  background-image: url('/img/iphone-hand-mobile1x.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-// .promo__offer {
-//   font: inherit;
-// }
+.promo__offer {
+  max-width: 300px;
+
+  position: absolute;
+  bottom: 0;
+
+  background-color: $main-color;
+}
+
+.promo__offer-title {
+  display: none;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    min-height: 684px;
+  }
+
+  .promo {
+    background-image: url('../img/bg-back-tablet.jpg');
+    background-position: center;
+  }
+
+  .promo__img-phone {
+    background-image: url('/img/iphone-hand.png');
+
+    bottom: 0;
+    left: calc(50% - 330px);
+
+    width: 660px;
+    height: 545px;
+  }
+
+  .promo__offer {
+    position: absolute;
+    bottom: 100px;
+
+    background-color: transparent;
+  }
+
+  .promo__offer-title {
+    display: block;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    color: #fff;
+  }
+}
+
+
+
+@media (min-width: $desktop-width) {
+
+  .promo__wrapper {
+    min-height: 750px;
+    width: 960px;
+
+    margin: 0 auto;
+  }
+
+  .promo {
+    background-image: url('../img/bg-back.jpg');
+  }
+
+  .promo__img-phone {
+    left: 250px;
+  }
+
+  .promo__offer-title {
+    margin-bottom: 50px;
+
+  }
+}

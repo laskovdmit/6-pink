@@ -62,7 +62,7 @@ a {
 }
 
 .devider-footer {
-  background-image: url('/img/bg-triangle-white-footer.svg');
+  background-image: url('/img/triangle.png');
   background-repeat: no-repeat;
   background-position: bottom;
 
@@ -74,21 +74,21 @@ a {
 }
 
 .page {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
 }
 
-// .page-main {
-//   font: inherit;
-// }
+.page-main {
+  padding-top: 260px;
+}
 
 .pageform {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
 }
 
 .pagephoto {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
 }
 
@@ -98,4 +98,60 @@ a {
   cursor: pointer;
 
   padding: 0;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page {
+    width: $tablet-width;
+  }
+
+  .pageform {
+    width: $tablet-width;
+  }
+
+  .pagephoto {
+    width: $tablet-width;
+  }
+
+  .page-main {
+    padding-top: 276px;
+  }
+
+  .devider {
+    height: 54px;
+  }
+
+  .devider-footer {
+    height: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page {
+    min-width: 1200px;
+  }
+
+  .pageform {
+    min-width: 1200px;
+  }
+
+  .pagephoto {
+    min-width: 1200px;
+  }
+
+  .page-main {
+    padding-top: 0;
+  }
+
+  .devider {
+    height: 94px;
+  }
+
+  .devider-footer {
+    height: 122px;
+  }
 }

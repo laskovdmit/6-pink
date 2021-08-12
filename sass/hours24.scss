@@ -1,19 +1,95 @@
-// .hours24 {
-//   font: inherit;
-// }
+.hours24 {
+  display: none;
+}
 
-// .hours24__img {
-//   font: inherit;
-// }
-
-// .hours24__content {
-//   font: inherit;
-// }
 
 // .hours24__descr {
 //   font: inherit;
 // }
 
-// .hours24__link {
-//   font: inherit;
-// }
+
+
+
+@media (min-width: $tablet-width) {
+  .hours24 {
+    display: block;
+
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .hours24__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hours24__img {
+    background-image: url('/img/timer-tablet.png');
+    background-repeat: no-repeat;
+    width: 238px;
+    height: 276px;
+
+    flex-basis: 50%;
+  }
+
+  .hours24__content {
+    flex-basis: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hours24__title {
+    width: 170px;
+
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .hours24__link {
+    color: $second-color;
+    text-decoration: underline;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .hours24 {
+    background-color: $bg-color;
+
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .hours24__wrapper {
+    width: 960px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hours24__img {
+    background-image: url('/img/timer-desktop.png');
+    width: 298px;
+    height: 345px;
+
+    margin-right: 40px;
+
+    flex-basis: auto;
+  }
+
+  .hours24__content {
+    flex-basis: auto;
+    width: 574px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .hours24__title {
+    width: auto;
+  }
+}

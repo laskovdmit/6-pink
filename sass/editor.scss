@@ -2,16 +2,19 @@
   background-color: $bg-color;
 }
 
-// .editor__wrapper {
-//   font: inherit;
-// }
+.editor__wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 .editor__window {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .editor__img {
-  display: block;
+  width: 280px;
+  height: 374px;
 }
 
 // .editor__form {
@@ -90,4 +93,34 @@
 .editor__container {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .editor__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .editor__window {
+    padding: 0;
+  }
+}
+
+
+
+@media (min-width: $desktop-width) {
+  .editor__wrapper {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 80px;
+  }
+
+  .editor__img {
+    background-color: #555;
+    width: 300px;
+    height: 400px;
+  }
 }

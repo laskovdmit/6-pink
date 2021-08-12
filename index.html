@@ -1,96 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пинк</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a href="#" class="logo page-header__logo">
-          <img class="logo__desktop visually-hidden" src="http://placehold.it/147x40" width="147px" height="40px" alt="Логотип">
-          <img class="logo__mobile" src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип">
-        </a>
-        <button class="navigation__burger" type="button"></button>
-      </div>
-      <nav class="navigation page-header__navigation">
-        <ul class="navigation__list site-list">
-          <li class="site-list__item subtitle"><a href="#">Главная</a></li>
-          <li class="site-list__item subtitle"><a href="#">Фотографии</a></li>
-          <li class="site-list__item subtitle"><a href="#">Конкурс</a></li>
-          <li class="site-list__item subtitle"><a href="#">Dmitry</a></li>
-        </ul>
-      </nav>
+      <div class="page-header__container">
+        <div class="page-header__wrapper container">
+          <a href="#" class="logo page-header__logo">
+            <img class="logo__desktop" src="img/logotype-white-desktop.png" width="147px" height="40px" alt="Логотип">
+            <img class="logo__tablet" src="img/logotype-white-tablet.png" width="147px" height="40px" alt="Логотип">
+            <img class="logo__mobile" src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип">
+          </a>
+          <button class="navigation__burger" type="button"></button>
+        </div>
+          <nav class="navigation page-header__navigation">
+            <ul class="navigation__list site-list">
+              <li class="site-list__item subtitle container"><a href="index.html">Главная</a></li>
+              <li class="site-list__item subtitle container"><a href="photo.html">Фотографии</a></li>
+              <li class="site-list__item subtitle container"><a href="form.html">Конкурс</a></li>
+              <li class="site-list__item subtitle container"><a href="https://github.com/laskovdmit" target="blank">Dmitry</a></li>
+            </ul>
+          </nav>
+        </div>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Приложение для телефона</h1>
       <section class="promo">
-        <div class="promo__photo-wrapper">
-          <img class="promo__img-phone" src="img/iphone-hand-mobile@1x.png" width="320px" height="314px" alt="Наше приложение">
-        </div>
-        <h2 class="title title--center visually-hidden">Взгляни на жизнь иначе!</h2>
-        <div class="promo__offer offer">
-          <button class="offer__button button subtitle" type="button">Скачать приложение</button>
-          <ul class="offer__platform-list">
-            <li class="offer__platform">
-              <img class="offer__img offer__img--ios" src="/img/logo-apple.svg" width="47px" height="56px" alt="Ios">
-            </li>
-            <li class="offer__platform">
-              <img class="offer__img offer__img--android" src="/img/logo-android.svg" width="43px" height="47px" alt="Android">
-            </li>
-            <li class="offer__platform">
-              <img class="offer__img offer__img--windows" src="img/logo-microsoft.svg" width="44px" height="41px" alt="Windows">
-            </li>
-          </ul>
-          <p class="offer__descr">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="promo__wrapper">
+          <div class="promo__img-phone"></div>
+          <div class="promo__offer offer container">
+            <h2 class="promo__offer-title title title--center">Взгляните на жизнь иначе!</h2>
+            <button class="offer__button button subtitle" type="button">Скачать приложение</button>
+            <ul class="offer__platform-list">
+              <li class="offer__platform">
+                <img class="offer__img offer__img--ios" src="/img/logo-apple.svg" width="47px" height="56px" alt="Ios">
+              </li>
+              <li class="offer__platform">
+                <img class="offer__img offer__img--android" src="/img/logo-android.svg" width="43px" height="47px" alt="Android">
+              </li>
+              <li class="offer__platform">
+                <img class="offer__img offer__img--windows" src="img/logo-microsoft.svg" width="44px" height="41px" alt="Windows">
+              </li>
+            </ul>
+            <p class="offer__descr">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
+      <h1 class="visually-hidden">Приложение для телефона</h1>
       <section class="advantages">
-        <h2 class="advantages__title title title--center">Устали от cерости мегаполиса?<br><br>Нам есть, что вам предложить!</h2>
+        <h2 class="title title--center container">Устали от cерости мегаполиса?</h2>
+        <h2 class="advantages__title title title--center container">Нам есть, что вам предложить!</h2>
         <div class="devider"></div>
-        <div class="advantages__wrapper">
+        <div class="advantages__wrapper container">
           <ul class="advantages__list">
             <li class="advantages__item">
-              <img class="advantages__item-img visually-hidden" src="http://placehold.it/186x389" width="186px" height="302" alt="Серый экран">
-              <h3 class="subtitle subtitle--center">Поднимает настроение</h3>
+              <div class="advantages__item-wrapper">
+                <img class="advantages__item-img" src="/img/iphonescreen1.png" width="186px" height="382" alt="Серый экран">
+                <img class="advantages__item-layer" src="img/layer.png" width="294px" height="17px" alt="Серый экран">
+              </div>
+              <h3 class="advantages__item-subtitle subtitle subtitle--center">Поднимает настроение</h3>
               <p class="advantages__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__item-img visually-hidden" src="http://placehold.it/186x389" width="186px" height="302" alt="Яркий экран">
-              <h3 class="subtitle subtitle--center">Меняет мир вокруг</h3>
+              <div class="advantages__item-wrapper">
+                <img class="advantages__item-img" src="/img/iphonescreen2.png" width="186px" height="382" alt="Яркий экран">
+                <img class="advantages__item-layer" src="img/layer.png" width="294px" height="17px" alt="Яркий экран">
+              </div>
+              <h3 class="advantages__item-subtitle subtitle subtitle--center">Меняет мир вокруг</h3>
               <p class="advantages__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__item-img visually-hidden" src="http://placehold.it/186x389" width="186px" height="302" alt="Экран с улыбкой">
-              <h3 class="subtitle subtitle--center">Заводит новых друзей</h3>
+              <div class="advantages__item-wrapper">
+                <img class="advantages__item-img" src="/img/iphonescreen3.png" width="186px" height="382" alt="Экран с улыбкой">
+                <img class="advantages__item-layer" src="img/layer.png" width="294px" height="17px" alt="Экран с улыбкой">
+              </div>
+              <h3 class="advantages__item-subtitle subtitle subtitle--center">Заводит новых друзей</h3>
               <p class="advantages__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
           <div class="advantages__img-wrapper">
-            <img class="advantages__img" src="img/iphonescreen3.png" width="157px" height="330px" alt="Экран с улыбкой">
+            <div class="advantages__img"></div>
           </div>
         </div>
-        <div class="hours24 visually-hidden">
-          <img class="hours24__img" src="http://placehold.it/298x345" width="298px" height="345px" alt="Эффект на 24 часа">
-          <div class="hours24__content">
-            <h3 class="subtitle">Эффект на 24 часа!</h3>
-            <p class="hours24__descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длился целые сутки!</p>
-            <a href="#" class="hours24__link">Узнать больше об исследовании</a>
+        <div class="hours24 container">
+          <div class="hours24__wrapper">
+            <div class="hours24__img"></div>
+            <div class="hours24__content">
+              <h3 class="hours24__title subtitle">Эффект на 24 часа!</h3>
+              <p class="hours24__descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длился целые сутки!</p>
+              <a href="#" class="hours24__link">Узнать больше об исследовании</a>
+            </div>
           </div>
         </div>
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы наших клиентов</h2>
-        <div class="reviews__slider slider">
+        <div class="reviews__slider container slider">
           <button class="reviews__prev visually-hidden">Назад</button>
           <div class="reviews__wrapper slider__list">
             <div class="reviews__item slider__item">
-              <img class="reviews__img visually-hidden" src="http://placehold.it/79x63" width="79px" height="63px" alt="Кавычки">
-              <div class="reviews__persone persone">
-                <h2 class="subtitle persone__name subtitle--center">Николай Петров</h2>
-                <p class="persone__info visually-hidden">25 лет, водитель трамвая</p>
+              <img class="reviews__img" src="/img/quotes.png" width="79px" height="63px" alt="Кавычки">
+              <div class="reviews__persone ">
+                <h2 class="subtitle reviews__persone-name subtitle--center">Николай Петров</h2>
+                <p class="reviews__persone-info">25 лет, водитель трамвая</p>
               </div>
               <p class="reviews__descr">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сервые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
             </div>
@@ -106,10 +123,10 @@
       <section class="tariff">
         <div class="devider"></div>
         <h2 class="visually-hidden">Наши тарифы</h2>
-        <div class="tariff__wrapper slider">
-          <table class="price slider__list">
+        <div class="tariff__wrapper container slider">
+          <table class="tariff__price price slider__list">
             <tr>
-              <td class="visually-hidden price__type"></td>
+              <td class="price__type--hide"></td>
               <td class="price__type price__type--base">
                 <h3 class="subtitle price__title">БАЗА</h3>
                 <p class="title price__value">1,99 USD</p>
@@ -124,7 +141,7 @@
               </td>
             </tr>
             <tr>
-              <td class="price__include visually-hidden"><p class="price__ability-name">Розовый фильтр</p></td>
+              <td class="price__include price__include-ability"><p class="price__ability-column">Розовый фильтр</p></td>
               <td class="price__include price__type--base">
                 <p class="price__ability-name">Розовый фильтр</p>
                 <img class="price__include-img" src="/img/icon-yes.svg" width="31px" height="21px" alt="Опция включена">
@@ -139,7 +156,7 @@
               </td>
             </tr>
             <tr>
-              <td class="price__include visually-hidden"><p class="price__ability-name">Смайлики</p></td>
+              <td class="price__include price__include-ability"><p class="price__ability-column">Смайлики</p></td>
               <td class="price__include price__type--base">
                 <p class="price__ability-name">Смайлики</p>
                 <img class="price__include-img" src="/img/icon-no.svg" width="31px" height="21px" alt="Опция не включена">
@@ -154,7 +171,7 @@
               </td>
             </tr>
             <tr>
-              <td class="price__include visually-hidden"><p class="price__ability-name">Комментарии</p></td>
+              <td class="price__include price__include-ability"><p class="price__ability-column">Комментарии</p></td>
               <td class="price__include price__type--base">
                 <p class="price__ability-name">Комментарии</p>
                 <img class="price__include-img" src="/img/icon-no.svg" width="31px" height="21px" alt="Опция не включена">
@@ -177,14 +194,14 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper container">
           <h2 class="title title--center">Остались вопросы?<br>Свяжитесь с нами!</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
               <h3 class="contacts__subtitle subtitle subtitle--center">Звоните:</h3>
               <a class="title contacts__title" href="#">+7 (812) 555-66-66</a>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--side">
               <h3 class="contacts__subtitle subtitle subtitle--center">Пишите:</h3>
               <a class="title contacts__title" href="#">laskovdmit@gmail.com</a>
             </li>
@@ -200,26 +217,27 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer visually-hidden">
-      <div class="page-footer__wrapper">
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
         <a href="#" class="logo">
-          <img class="logo__desktop visually-hidden" src="http://placehold.it/147x40" width="147px" height="40px" alt="Логотип">
-          <img class="logo__mobile" src="http://placehold.it/50x25" width="50px" height="25px" alt="Логотип">
+          <img class="logo__desktop" src="img/logo-pink-blue-mobile.svg" width="147px" height="40px" alt="Логотип">
+          <img class="logo__tablet" src="img/logo-pink-blue-mobile.svg" width="147px" height="40px" alt="Логотип">
+          <img class="logo__mobile" src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип">
         </a>
         <ul class="social">
           <li class="social__item">
-            <img class="social__item-img social__item-img--twitter" src="http://placehold.it/18x14" width="18px" height="14px" alt="Twitter">
+            <img class="social__item-img social__item-img--twitter" src="/img/icon-twitter.svg" width="18px" height="14px" alt="Twitter">
           </li>
           <li class="social__item">
-            <img class="social__item-img social__item-img--facebook" src="http://placehold.it/9x18" width="9px" height="18px" alt="Facebook">
+            <img class="social__item-img social__item-img--facebook" src="/img/icon-facebook.svg" width="9px" height="18px" alt="Facebook">
           </li>
           <li class="social__item">
-            <img class="social__item-img social__item-img--youtube" src="http://placehold.it/15x13" width="15px" height="13px" alt="Youtube">
+            <img class="social__item-img social__item-img--youtube" src="/img/icon-youtube.svg" width="15px" height="13px" alt="Youtube">
           </li>
         </ul>
         <div class="copyright">
           <p class="copyright__title">Разработано</p>
-          <img class="copyright__logo" src="http://placehold.it/27x34" width="27px" height="34px" alt="Логотип компании">
+          <img class="copyright__logo" src="/img/logo-htmlacademy.svg" width="27px" height="34px" alt="Логотип компании">
         </div>
       </div>
     </footer>

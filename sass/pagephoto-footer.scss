@@ -3,7 +3,8 @@
 // }
 
 .pagephoto-footer__wrapper {
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .pagephoto-footer__logo {
@@ -14,4 +15,42 @@
 .pagephoto-footer__socials {
   margin-top: 40px;
   margin-bottom: 30px;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .pagephoto-footer {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+
+    background-color: #fff;
+  }
+
+  .pagephoto-footer__wrapper {
+    height: 125px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pagephoto-footer {
+    height: 200px;
+
+  }
+
+  .pagephoto-footer__wrapper {
+    width: $desktop-width;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

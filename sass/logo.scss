@@ -2,10 +2,43 @@
 //   font: inherit;
 // }
 
-// .logo__desktop {
-//   font: inherit;
-// }
+.logo__desktop {
+  display: none;
+}
 
-// .logo__mobile {
-//   font: inherit;
-// }
+.logo__tablet {
+  display: none;
+}
+
+.logo__mobile {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__desktop {
+    display: none;
+  }
+
+  .logo__tablet {
+    display: block;
+  }
+
+  .logo__mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__desktop {
+    display: block;
+  }
+
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__mobile {
+    display: none;
+    }
+}
