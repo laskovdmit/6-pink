@@ -15,10 +15,7 @@
 }
 
 .advantages__list {
-  list-style: none;
-
-  margin: 0;
-  padding: 0;
+  @include ul-style;
 }
 
 .advantages__item {
@@ -53,7 +50,6 @@
 }
 
 .advantages__img-wrapper {
-
   height: 278px;
   overflow: hidden;
 }
@@ -62,9 +58,9 @@
   background-image: url('/img/iphonescreen3mobile.png');
   background-repeat: no-repeat;
   background-position: top;
+
   width: 157px;
   height: 330px;
-
   margin: 0 auto;
 }
 
@@ -75,6 +71,10 @@
     padding-top: 60px;
   }
 
+  .advantages br {
+    display: none;
+  }
+
   .advantages__title {
     margin-bottom: 45px;
     margin-top: 0;
@@ -83,6 +83,7 @@
 
     width: 400px;
   }
+
   .advantages__wrapper {
     display: flex;
     flex-direction: row-reverse;

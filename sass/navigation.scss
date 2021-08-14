@@ -1,30 +1,6 @@
 // .navigation {
-//   font: inherit;
+//   position: relative;
 // }
-
-.navigation__burger {
-  background-color: inherit;
-  background-image: url("/img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  margin: 0;
-  padding: 0;
-  border: 0;
-
-  width: 50px;
-  height: 24px;
-
-  &:hover {
-    background-image: url("/img/icon-menu-cross.svg");
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .navigation__burger {
-    display: none;
-  }
-}
 
 // .navigation__list {
 //   font: inherit;

@@ -1,8 +1,5 @@
 .site-list {
-  list-style: none;
-
-  margin: 0;
-  padding: 0;
+  @include ul-style;
 }
 
 .site-list__item {
@@ -18,6 +15,14 @@
 
   background-color: $main-color;
   box-shadow: 0 1px 0 #000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  &:hover {
+    color: $second-color;
+  }
+
+  &:active {
+    color: $second-color-30;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -26,18 +31,38 @@
   }
 
   .site-list__item {
-    width: 170px;
+    width: 140px;
 
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
     text-transform: initial;
 
-    padding: 20px 0;
-
     border: none;
     box-shadow: none;
 
     background-color: transparent;
+
+    &:active {
+      color: rgb(255, 255, 255, 0.3);
+    }
+
+    &--active {
+      position: relative;
+
+      &:after {
+        content: "";
+
+        position: absolute;
+        bottom: 5px;
+        left: calc(50% - 55px);
+
+
+        width: 110px;
+        height: 2px;
+
+        background-color: #fff;;
+      }
+    }
   }
 }

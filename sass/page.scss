@@ -1,11 +1,16 @@
-.pagephoto-main {
+.page {
+  min-width: $mobile-width;
+}
+
+.page__main {
   padding-top: 260px;
 }
 
-.pagephoto-main__banner {
+.page__banner {
   background-image: url('/img/bg-back-mobile.png');
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
   min-height: 100px;
 
   padding-top: 100px;
@@ -16,28 +21,40 @@
   align-items: center;
 }
 
-.pagephoto-main__title {
+.page__title {
   color: #fff;
+  margin: 0 auto;
 }
 
-.pagephoto-main__challenge {
+.page__challenge {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.pagephoto-main__challenge-title {
+.page__challenge-title {
   color: $main-color;
+
+  font-size: 14px;
+  line-height: 30px;
 }
 
 
 @media (min-width: $tablet-width) {
-  .pagephoto-main__banner {
+  .page {
+    min-width: $tablet-width;
+  }
+
+  .page__main {
+    padding-top: 276px;
+  }
+
+  .page__banner {
     min-height: 300px;
     background-image: url('../img/bg-back-tablet.jpg');
     background-position: top;
   }
 
-  .pagephoto-main__title {
+  .page__title {
     font-size: 50px;
     line-height: 60px;
 
@@ -45,27 +62,30 @@
     margin: auto;
   }
 
-  .pagephoto-main__challenge {
+  .page__challenge {
     padding-top: 70px;
     padding-bottom: 70px;
   }
 
-  .pagephoto-main__challenge-title {
+  .page__challenge-title {
     font-size: 18px;
     line-height: 30px;
 
     width: 500px;
     margin: 0 auto;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-  .pagephoto-main {
+  .page {
+    min-width: 100%;
+  }
+
+  .page__main {
     padding-top: 0;
   }
 
-  .pagephoto-main__banner {
+  .page__banner {
     min-height: 260px;
     margin: 0 auto;
 
@@ -73,17 +93,17 @@
     background-position: top;
   }
 
-  .pagephoto-main__title {
+  .page__title {
     width: 780px;
   }
 
-  .pagephoto-main__challenge {
+  .page__challenge {
     width: $desktop-width;
     margin: 0 auto;
   }
 
 
-  .pagephoto-main__challenge-title {
+  .page__challenge-title {
     width: 700px;
   }
 }

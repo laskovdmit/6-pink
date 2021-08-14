@@ -1,7 +1,8 @@
 .promo {
-  background-image: url('../img/bg-back-mobile.png');
+  background-image: url('../img/bg-back-tablet.jpg');
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
+  background-size: cover;
 }
 
 .promo__wrapper {
@@ -12,7 +13,7 @@
 
 .promo__img-phone {
   position: absolute;
-  bottom: 280px;
+  bottom: 250px;
   left: calc(50% - 160px);
 
   width: 320px;
@@ -24,12 +25,8 @@
 }
 
 .promo__offer {
-  max-width: 300px;
-
   position: absolute;
   bottom: 0;
-
-  background-color: $main-color;
 }
 
 .promo__offer-title {
@@ -43,24 +40,20 @@
     min-height: 684px;
   }
 
-  .promo {
-    background-image: url('../img/bg-back-tablet.jpg');
-    background-position: center;
-  }
-
   .promo__img-phone {
     background-image: url('/img/iphone-hand.png');
 
     bottom: 0;
     left: calc(50% - 330px);
 
-    width: 660px;
+    width: 640px;
     height: 545px;
   }
 
   .promo__offer {
     position: absolute;
     bottom: 100px;
+    right: 45%;
 
     background-color: transparent;
   }
@@ -92,6 +85,10 @@
 
   .promo__img-phone {
     left: 250px;
+  }
+
+  .promo__offer {
+    left: 0;
   }
 
   .promo__offer-title {

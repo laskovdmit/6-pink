@@ -2,6 +2,28 @@
 //   font: inherit;
 // }
 
+.logo__bottom {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
+
+  &:hover {
+    .logo__bottom--char {
+      fill: $second-color;
+    }
+  }
+
+  &:active {
+    .logo__bottom--char {
+      fill: $main-color-30;
+    }
+
+    .logo__bottom--glasses {
+      fill: $second-color-30;
+    }
+  }
+}
+
 .logo__desktop {
   display: none;
 }
@@ -12,10 +34,13 @@
 
 .logo__mobile {
   display: block;
-  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
+  .logo__bottom {
+    margin-bottom: 10px;
+  }
+
   .logo__desktop {
     display: none;
   }

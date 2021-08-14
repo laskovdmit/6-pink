@@ -52,8 +52,8 @@ a {
 .devider {
   background-image: url('/img/bg-triangle-white.svg');
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 
   background-color: $bg-color;
 
@@ -62,34 +62,13 @@ a {
 }
 
 .devider-footer {
-  background-image: url('/img/triangle.png');
-  background-repeat: no-repeat;
-  background-position: bottom;
-
   position: absolute;
   z-index: 1;
 
+  background-position: center bottom;
+  background-size:auto;
   width: 100%;
-  height: 33px;
-}
-
-.page {
-  width: $mobile-width;
-  margin: 0 auto;
-}
-
-.page-main {
-  padding-top: 260px;
-}
-
-.pageform {
-  width: $mobile-width;
-  margin: 0 auto;
-}
-
-.pagephoto {
-  width: $mobile-width;
-  margin: 0 auto;
+  height: auto;
 }
 
 .button {
@@ -105,53 +84,17 @@ a {
 }
 
 @media (min-width: $tablet-width) {
-  .page {
-    width: $tablet-width;
-  }
-
-  .pageform {
-    width: $tablet-width;
-  }
-
-  .pagephoto {
-    width: $tablet-width;
-  }
-
-  .page-main {
-    padding-top: 276px;
-  }
-
   .devider {
     height: 54px;
-  }
-
-  .devider-footer {
-    height: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page {
-    min-width: 1200px;
-  }
-
-  .pageform {
-    min-width: 1200px;
-  }
-
-  .pagephoto {
-    min-width: 1200px;
-  }
-
-  .page-main {
-    padding-top: 0;
-  }
-
   .devider {
     height: 94px;
   }
 
   .devider-footer {
-    height: 122px;
+    max-height: 122px;
   }
 }

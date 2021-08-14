@@ -1,7 +1,3 @@
-.price {
-  margin-left: -280px;
-}
-
 .price tr {
   display: flex;
 }
@@ -21,10 +17,39 @@
   display: none;
 }
 
-// .price__type--active {
-//   font: inherit;
-// }
+.price__type--active {
+  position: relative;
+}
 
+.price__type--active::before {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: -2px;
+
+  width: 74px;
+  height: 74px;
+
+  background-image: url("/img/bg-hit-tablet.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.price__type--active::after {
+  content: "ХИТ";
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+
+  transform: rotate(-45deg);
+}
 
 // .price__type--base {
 //   font: inherit;
@@ -53,6 +78,7 @@
 
 .price__ability-name {
   margin: 0;
+  text-transform: uppercase;
 }
 
 .price__include {
@@ -124,6 +150,16 @@
   .price__toggles {
     display: none;
   }
+
+  .price__type--active::before {
+    width: 61px;
+    height: 61px;
+  }
+
+  .price__type--active::after {
+    top: 5px;
+    left: 5px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -155,5 +191,17 @@
 
   .price__value {
     font-size: 24px;
+  }
+
+  .price__type--active::before {
+    width: 74px;
+    height: 74px;
+
+    background-image: url("/img/bg-hit.svg");
+  }
+
+  .price__type--active::after {
+    top: 10px;
+    left: 10px;
   }
 }

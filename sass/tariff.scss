@@ -5,13 +5,26 @@
 .tariff__wrapper {
   overflow: hidden;
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 58px;
+}
+
+
+.tariff__price {
+
 }
 
 
 @media (min-width: $tablet-width) {
   .tariff__wrapper {
     padding-bottom: 65px;
+  }
+
+  .tariff__price {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -21,10 +34,5 @@
     margin: 0 auto;
 
     padding-bottom: 95px;
-  }
-
-  .tariff__price {
-    margin-left: auto;
-    margin-right: auto;
   }
 }

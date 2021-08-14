@@ -6,10 +6,6 @@
   padding-bottom: 40px;
 }
 
-// .reviews__prev {
-//   font: inherit;
-// }
-
 .reviews__wrapper {
   padding: 0 20px;
   padding-top: 50px;
@@ -31,11 +27,13 @@
   line-height: 30px;
 }
 
-// .reviews__next {
-//   font: inherit;
-// }
+.reviews__prev {
+  display: none;
+}
 
-
+.reviews__next {
+  display: none;
+}
 
 .reviews__persone-info {
   margin: 0;
@@ -83,11 +81,21 @@
 
 @media (min-width: $desktop-width) {
 
+  .reviews__slider {
+    width: $desktop-width - 20px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .reviews__wrapper {
     padding-top: 70px;
     margin: 0 auto;
 
-    width: 920px;
+    width: 780px;
   }
 
   .reviews__img {
@@ -103,7 +111,6 @@
     margin-top: 45px;
   }
 
-
   .reviews__persone-name {
     font-size: 24px;
     line-height: 30px;
@@ -115,6 +122,65 @@
 
   .reviews__toggles {
     display: none;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    display: block;
+    position: relative;
+    cursor: pointer;
+
+    padding: 0;
+    border: none;
+    background-color: inherit;
+
+    width: 22px;
+    height: 42px;
+  }
+
+  .reviews__prev::before,
+  .reviews__prev::after {
+    content: "";
+    position: absolute;
+
+    width: 25px;
+    height: 2px;
+    background-color: #bec2c7;
+
+    left: 0;
+  }
+
+  .reviews__prev::before {
+    top: 12px;
+    transform: rotate(-45deg);
+  }
+
+  .reviews__prev::after {
+    bottom: 12px;
+    transform: rotate(45deg);
+  }
+
+
+  .reviews__next::before,
+  .reviews__next::after {
+    content: "";
+    position: absolute;
+
+    width: 25px;
+    height: 2px;
+    background-color: #bec2c7;
+
+    left: 0;
+  }
+
+  .reviews__next::before {
+    top: 12px;
+    transform: rotate(45deg);
+  }
+
+  .reviews__next::after {
+    bottom: 12px;
+    transform: rotate(-45deg);
   }
 
 }

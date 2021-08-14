@@ -1,20 +1,18 @@
-// .pageform-footer {
-//   font: inherit;
-// }
+.footer--disactive-mobile {
+  display: none;
+}
 
-.pageform-footer__wrapper {
+.footer__wrapper {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.pageform-footer__socials {
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-
 @media (min-width: $tablet-width) {
-  .pageform-footer {
+  .footer--disactive-mobile {
+    display: block;
+  }
+
+  .footer {
     display: block;
     position: absolute;
 
@@ -23,8 +21,8 @@
     background-color: #fff;
   }
 
-  .pageform-footer__wrapper {
-    height: 125px;
+  .footer__wrapper {
+    height: 60px;
 
     display: flex;
     justify-content: space-between;
@@ -34,9 +32,9 @@
 
 @media (min-width: $desktop-width) {
 
-  .pageform-footer__wrapper {
+  .footer__wrapper {
     width: $desktop-width;
-    height: 200px;
+    height: 120px;
 
     margin: 0 auto;
 

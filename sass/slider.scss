@@ -27,6 +27,14 @@
   border: none;
   border-radius: 50%;
 
+  &:hover {
+    background-color: $main-color-60;
+  }
+
+  &:active {
+    background-color: $main-color-10;
+  }
+
   &--active {
     width: 12px;
     height: 12px;
@@ -35,5 +43,9 @@
 
     background-color: #fff;
     border: 3px solid $main-color;
+
+    &:hover {
+      background-color: inherit;
+    }
   }
 }

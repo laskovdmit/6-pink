@@ -1,8 +1,8 @@
 .social {
-  margin: 0;
-  padding: 0;
+  @include ul-style;
 
-  list-style: none;
+  margin-top: 40px;
+  margin-bottom: 30px;
 
   display: flex;
   align-items: center;
@@ -21,11 +21,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    border-color: $main-color;
+  }
+
+  &:active {
+    border-color: $main-color-10;
+
+    .social__item-img {
+      fill: $second-color-30;
+    }
+
+  }
 }
 
-// .social__item-img {
-//   font: inherit;
-// }
+.social__item-img {
+  fill: $second-color;
+}
 
 // .social__item-img--twitter {
 //   font: inherit;

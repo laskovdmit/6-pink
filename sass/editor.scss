@@ -15,6 +15,9 @@
 .editor__img {
   width: 280px;
   height: 374px;
+
+  display: block;
+  margin: 0 auto;
 }
 
 // .editor__form {
@@ -68,7 +71,12 @@
 }
 
 .editor__button {
-  width: 100%;
+  width: 70%;
+  min-width: 280px;
+
+  display: block;
+  margin: 0 auto;
+
   border: 3px solid $main-color-10;
   border-radius: 29px;
 
@@ -83,10 +91,30 @@
 
     color: $second-color;
     border-color: $second-color;
+
+    &:hover {
+      background-color: $second-color;
+      color: #fff;
+    }
+
+    &:active {
+      background-color: $second-color;
+      color: $main-color-30;
+    }
   }
 
   &--cancel {
     color: #dddfe0;
+
+    &:hover {
+      border-color: $main-color-30;
+      color: $main-color-30;
+    }
+
+    &:active {
+      background-color: $main-color-30;
+      color: rgb(255, 255, 255, 0.3);
+    }
   }
 }
 
@@ -106,6 +134,11 @@
 
   .editor__window {
     padding: 0;
+    margin: 0 auto;
+  }
+
+  .editor__form {
+    margin: 0 auto;
   }
 }
 

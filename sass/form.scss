@@ -22,18 +22,36 @@
 
   margin-top: 13px;
   margin-bottom: 25px;
+  margin-left: -23px;
   padding: 13px 16px;
 
+  flex-grow: 1;
+
   border: 2px solid #e5e5e5;
-  width: auto;
+  width: calc(100% - 32px);
+
+  &:focus,
+  &:active {
+    border-color: $second-color;
+  }
+
+  &:hover {
+    border-color: $main-color;
+  }
+
 }
 
 .form__label {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+  width: 100%;
+  margin-left: 23px;
+
   font-size: 14px;
   line-height: 30px;
   color: $second-color;
-
-  margin-left: 23px;
 }
 
 .form__subtitle {
@@ -83,20 +101,36 @@
   resize: none;
 }
 
-.form__buttom {
+.form__bottom {
   display: flex;
   flex-direction: column;
 }
 
 .form__button {
-  width: auto;
+  width: 300px;
   padding: 20px 0;
+  margin: 0 auto;
 
   background-color: #2aab6d;
   border-radius: 3px;
 
   text-transform: uppercase;
   color: #fff;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+    background-color: #1c9b5e;
+  }
+
+  &:disabled {
+    color: #fff;
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
 }
 
 .form__required-feilds {
@@ -109,7 +143,7 @@
   display: none;
 }
 
-.form__required-feilds--hide {
+.form__required-feilds--desktop {
   display: none;
 }
 
@@ -135,17 +169,14 @@
   }
 
   .form__label {
-    display: flex;
-    align-items: baseline;
-
-    width: auto;
-
     margin-left: 0;
+    flex-direction: row;
   }
 
   .form__input {
     margin-left: 20px;
     margin-top: 25px;
+    flex-grow: 0;
 
     width: 100%;
   }
@@ -223,7 +254,7 @@
     order: 4;
   }
 
-  .form__buttom {
+  .form__bottom {
     order: 5;
 
     flex-direction: row;
@@ -233,9 +264,14 @@
 
   .form__button {
     height: 60px;
-    width: 296px;
 
+    margin: 0;
     padding: 0;
+  }
+
+
+  .form__required-feilds {
+    text-align: right;
   }
 
 }
@@ -297,7 +333,7 @@
     }
   }
 
-  .form__buttom {
+  .form__bottom {
     width: 100%;
   }
 
@@ -305,11 +341,11 @@
     font-size: 18px;
   }
 
-  .form__required-feilds {
+  .form__required-feilds--mobile {
     display: none;
   }
 
-  .form__required-feilds--hide {
+  .form__required-feilds--desktop {
     margin: 0;
     font-size: 18px;
 

@@ -16,6 +16,17 @@
 
   display: block;
   text-align: center;
+
+  &:hover {
+    color: $main-color;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+  }
+
+  &:active {
+    color: $main-color-30;
+    text-decoration: none;
+  }
 }
 
 .contacts__subtitle {
@@ -25,17 +36,14 @@
 }
 
 .contacts__list {
-  list-style: none;
-
-  margin: 0;
-  padding: 0;
+  @include ul-style;
   margin-top: 50px;
 }
 
 .contacts__map {
-  background-image: url('/img/bg-map-mobile.png');
+  background-image: url('/img/bg-map.png');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: 50% 37%;
 
   height: 200px;
 
@@ -61,6 +69,14 @@
     justify-content: space-around;
   }
 
+  .contacts__item {
+    flex-basis: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .contacts__title {
     width: 240px;
 
@@ -69,10 +85,10 @@
   }
 
   .contacts__map {
-    margin-bottom: -125px;
+    margin-bottom: -124px;
 
     height: 500px;
-    background-image: url('/img/bg-map-tablet.png');
+    background-position: 50% 43%;
   }
 
   .contacts__map-icon {
@@ -111,8 +127,10 @@
   .contacts__map {
     margin-bottom: -200px;
 
-    height: 700px;
-    background-image: url('/img/bg-map.png');
+    width: 100%;
+    min-height: 700px;
+    background-size: cover;
+    background-position: 50% 48%;
   }
 
   .contacts__map-icon {

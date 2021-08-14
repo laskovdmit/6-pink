@@ -1,6 +1,12 @@
 .offer {
   padding-top: 28px;
   padding-bottom: 28px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+
+  width: 87.5%;
+
+  background-color: $main-color;
 }
 
 .offer__button {
@@ -10,17 +16,31 @@
   border: 3px solid #fff;
   border-radius: 28px;
 
-  width: 100%;
+  width: 80%;
+  min-width: 280px;
   height: 55px;
 
+  display: block;
+  margin: 0 auto;
   margin-bottom: 30px;
+
+  &:hover {
+    background-color: #fff;
+    color: $second-color;
+  }
+
+  &:active {
+    background-color: #fff;
+    color: $second-color-30;
+  }
 }
 
 .offer__platform-list {
-  list-style: none;
+  @include ul-style;
 
-  margin: 0;
-  padding: 0;
+  width: 80%;
+  min-width: 280px;
+  margin: 0 auto;
 
   display: flex;
   justify-content: space-around;
@@ -57,12 +77,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .offer {
+    width: 300px;
+  }
+
   .offer__descr {
     font-size: 18px;
+  }
+
+  .offer__button {
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
+
   .offer__button {
     font-size: 21px;
   }
