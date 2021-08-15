@@ -24,46 +24,9 @@
   }
 }
 
-.logo__desktop {
-  display: none;
-}
-
-.logo__tablet {
-  display: none;
-}
-
-.logo__mobile {
-  display: block;
-}
 
 @media (min-width: $tablet-width) {
   .logo__bottom {
     margin-bottom: 10px;
   }
-
-  .logo__desktop {
-    display: none;
-  }
-
-  .logo__tablet {
-    display: block;
-  }
-
-  .logo__mobile {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .logo__desktop {
-    display: block;
-  }
-
-  .logo__tablet {
-    display: none;
-  }
-
-  .logo__mobile {
-    display: none;
-    }
 }

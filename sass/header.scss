@@ -17,6 +17,11 @@
   align-items: center;
 }
 
+.header__logo img{
+  width: 75px;
+  height: 22px;
+}
+
 .header__burger {
   background-color: inherit;
 
@@ -102,7 +107,12 @@ background-color: $second-color-30;
   background-color: rgb(0, 0, 0, 0.3);
 }
 
-
+@media (min-width: $tablet-width) {
+  .header__logo img{
+    width: 147px;
+    height: 40px;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .header--opened .header__navigation,
