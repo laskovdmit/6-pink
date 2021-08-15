@@ -1,5 +1,5 @@
 .promo {
-  background-image: url('../img/bg-back-tablet.jpg');
+  background-image: url('../img/bg-back-mobile.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -36,6 +36,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .promo {
+    background-image: url('../img/bg-back-tablet.jpg');
+  }
+
   .promo__wrapper {
     min-height: 684px;
   }

@@ -13,44 +13,10 @@
   margin: 0 auto;
 }
 
-.all-photos__photo {
-  background-color: #555;
-  width: 280px;
-  height: 180px;
-
-  overflow: hidden;
-}
-
 .all-photos__img {
-  width: 300px;
-  height: 400px;
-
-  margin-top: -110px;
-  margin-left: -10px;
-}
-
-.all-photos__img--1 {
-  content: url("/img/photo-1-tablet.jpg");
-}
-
-.all-photos__img--2 {
-  content: url("/img/photo-2-tablet.jpg");
-}
-
-.all-photos__img--3 {
-  content: url("/img/photo-3-tablet.jpg");
-}
-
-.all-photos__img--4 {
-  content: url("/img/photo-4-tablet.jpg");
-}
-
-.all-photos__img--5 {
-  content: url("/img/photo-5-tablet.jpg");
-}
-
-.all-photos__img--6 {
-  content: url("/img/photo-6-tablet.jpg");
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 // .all-photos__comment {
@@ -71,16 +37,6 @@
   .all-photos__item {
     width: 300px;
   }
-
-  .all-photos__photo {
-    width: 300px;
-    height: 300px;
-  }
-
-  .all-photos__img {
-    margin-left: 0;
-    margin-top: -50px;
-  }
 }
 
 
@@ -92,10 +48,7 @@
   }
 
   .all-photos__item {
+    margin: 0;
     margin-bottom: 30px;
-  }
-
-  .all-photos__img {
-    margin-top: 0;
   }
 }

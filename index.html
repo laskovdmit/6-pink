@@ -12,10 +12,12 @@
   <header class="header">
     <div class="header__container header--opened">
       <div class="header__wrapper container">
-        <a href="index.html" class="logo">
-          <img class="logo__desktop" src="img/logotype-white-desktop.png" width="147px" height="40px" alt="Логотип">
-          <img class="logo__tablet" src="img/logotype-white-tablet.png" width="147px" height="40px" alt="Логотип">
-          <img class="logo__mobile" src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип">
+        <a href="index.html" class="header__logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.png">
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.png">
+            <img src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип PINK">
+          </picture>
         </a>
         <button class="header__burger" type="button"></button>
       </div>
@@ -144,45 +146,63 @@
             <td class="price__include price__include-ability"><p class="price__ability-column">Розовый фильтр</p></td>
             <td class="price__include price__type--base">
               <p class="price__ability-name">Розовый фильтр</p>
-              <img class="price__include-img" src="/img/icon-yes.svg" width="31px" height="21px" alt="Опция включена">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
             </td>
             <td class="price__include price__type--standart">
               <p class="price__ability-name">Розовый фильтр</p>
-              <img class="price__include-img" src="/img/icon-yes.svg" width="31px" height="21px" alt="Опция включена">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
             </td>
             <td class="price__include price__type--unlim">
               <p class="price__ability-name">Розовый фильтр</p>
-              <img class="price__include-img" src="/img/icon-yes.svg" width="31px" height="21px" alt="Опция включена">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
             </td>
           </tr>
           <tr>
             <td class="price__include price__include-ability"><p class="price__ability-column">Смайлики</p></td>
             <td class="price__include price__type--base">
               <p class="price__ability-name">Смайлики</p>
-              <img class="price__include-img" src="/img/icon-no.svg" width="31px" height="21px" alt="Опция не включена">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+              </svg>
             </td>
             <td class="price__include price__type--standart">
               <p class="price__ability-name">Смайлики</p>
-              <img class="price__include-img"  src="/img/icon-yes.svg" width="31px" height="21px" alt="Опция включена">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
             </td>
             <td class="price__include price__type--unlim">
               <p class="price__ability-name">Смайлики</p>
-              <img class="price__include-img" src="/img/icon-yes.svg" width="31px" height="21px" alt="Опция включена">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
             </td>
           </tr>
           <tr>
             <td class="price__include price__include-ability"><p class="price__ability-column">Комментарии</p></td>
             <td class="price__include price__type--base">
               <p class="price__ability-name">Комментарии</p>
-              <img class="price__include-img" src="/img/icon-no.svg" width="31px" height="21px" alt="Опция не включена">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+              </svg>
             </td>
             <td class="price__include price__type--standart">
               <p class="price__ability-name">Комментарии</p>
-              <img class="price__include-img" src="/img/icon-no.svg" width="31px" height="21px" alt="Опция не включена">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+              </svg>
             </td>
             <td class="price__include price__type--unlim">
               <p class="price__ability-name">Комментарии</p>
-              <img class="price__include-img" src="/img/icon-yes.svg" width="31px" height="21px" alt="Опция включена">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
             </td>
           </tr>
         </table>
@@ -215,7 +235,10 @@
         <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
       </svg>
       <div class="contacts__map">
-        <img class="contacts__map-icon" src="img/icon-map-marker.svg" width="36px" height="36px" alt="Наше местоположение">
+        <svg class="contacts__map-icon" version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
+          <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
+          <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
+        </svg>
       </div>
     </section>
   </main>
@@ -235,7 +258,7 @@
       </a>
       <ul class="social">
         <li class="social__item">
-          <svg class="social__item-img social__item-img--twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+          <svg class="social__item-img social__item-img--twitter" version="1.0" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
             <g id="W6EeEF_1_">
               <g>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>

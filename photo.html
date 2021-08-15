@@ -12,10 +12,12 @@
   <header class="header">
     <div class="header__container header--opened">
       <div class="header__wrapper container">
-        <a href="index.html" class="logo">
-          <img class="logo__desktop" src="img/logotype-white-desktop.png" width="147px" height="40px" alt="Логотип">
-          <img class="logo__tablet" src="img/logotype-white-tablet.png" width="147px" height="40px" alt="Логотип">
-          <img class="logo__mobile" src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип">
+        <a href="index.html" class="header__logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.png">
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.png">
+            <img src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип PINK">
+          </picture>
         </a>
         <button class="header__burger" type="button"></button>
       </div>
@@ -62,9 +64,11 @@
       <h2 class="visually-hidden">Все фотографии</h2>
       <div class="all-photos__wrapper">
         <div class="all-photos__item">
-          <div class="all-photos__photo">
-            <img class="all-photos__img all-photos__img--1" src="/img/photo-1-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Левон">
-          </div>
+          <picture>
+            <source media="(min-width: 960px)" srcset="/img/photo-1-desktop.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-1-tablet.jpg">
+            <img class="all-photos__img " src="/img/photo-1-mobile@1x.jpg" alt="Автор - Левон">
+          </picture>
           <div class="all-photos__comment comment">
             <div class="comment__header">
               <span class="comment__name subtitle">Левон</span>
@@ -78,9 +82,11 @@
           </div>
         </div>
         <div class="all-photos__item">
-          <div class="all-photos__photo">
-            <img class="all-photos__img all-photos__img--2" src="/img/photo-2-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Антон">
-          </div>
+          <picture>
+            <source media="(min-width: 960px)" srcset="/img/photo-2-desktop.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-2-tablet.jpg">
+            <img class="all-photos__img" src="/img/photo-2-mobile@1x.jpg" alt="Автор - Антон">
+          </picture>
           <div class="all-photos__comment comment">
             <div class="comment__header">
               <span class="comment__name subtitle">Антон</span>
@@ -94,9 +100,11 @@
           </div>
         </div>
         <div class="all-photos__item">
-          <div class="all-photos__photo">
-            <img class="all-photos__img all-photos__img--3" src="/img/photo-3-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Борис">
-          </div>
+          <picture>
+            <source media="(min-width: 960px)" srcset="/img/photo-3-desktop.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-3-tablet.jpg">
+            <img class="all-photos__img" src="/img/photo-3-mobile@1x.jpg" alt="Автор - Борис">
+          </picture>
           <div class="all-photos__comment comment">
             <div class="comment__header">
               <span class="comment__name subtitle">Борис</span>
@@ -110,9 +118,11 @@
           </div>
         </div>
         <div class="all-photos__item">
-          <div class="all-photos__photo">
-            <img class="all-photos__img all-photos__img--4" src="/img/photo-4-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Сергей">
-          </div>
+          <picture>
+            <source media="(min-width: 960px)" srcset="/img/photo-4-desktop.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-4-tablet.jpg">
+            <img class="all-photos__img" src="/img/photo-4-mobile@1x.jpg" alt="Автор - Сергей">
+          </picture>
           <div class="all-photos__comment comment">
             <div class="comment__header">
               <span class="comment__name subtitle">Сергей</span>
@@ -126,9 +136,11 @@
           </div>
         </div>
         <div class="all-photos__item">
-          <div class="all-photos__photo">
-            <img class="all-photos__img all-photos__img--5" src="/img/photo-5-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Максим">
-          </div>
+          <picture>
+            <source media="(min-width: 960px)" srcset="/img/photo-5-desktop.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-5-tablet.jpg">
+            <img class="all-photos__img" src="/img/photo-5-mobile@1x.jpg" alt="Автор - Максим">
+          </picture>
           <div class="all-photos__comment comment">
             <div class="comment__header">
               <span class="comment__name subtitle">Максим</span>
@@ -142,9 +154,11 @@
           </div>
         </div>
         <div class="all-photos__item">
-          <div class="all-photos__photo">
-            <img class="all-photos__img all-photos__img--6" src="/img/photo-6-mobile@1x.jpg" width="280px" height="180px" alt="Автор - Надежда">
-          </div>
+          <picture>
+            <source media="(min-width: 960px)" srcset="/img/photo-6-desktop.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-6-tablet.jpg">
+            <img class="all-photos__img" src="/img/photo-6-mobile@1x.jpg" alt="Автор - Надежда">
+          </picture>
           <div class="all-photos__comment comment">
             <div class="comment__header">
               <span class="comment__name subtitle">Надежда</span>

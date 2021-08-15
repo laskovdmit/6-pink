@@ -12,10 +12,12 @@
   <header class="header">
     <div class="header__container header--opened">
       <div class="header__wrapper container">
-        <a href="index.html" class="logo">
-          <img class="logo__desktop" src="img/logotype-white-desktop.png" width="147px" height="40px" alt="Логотип">
-          <img class="logo__tablet" src="img/logotype-white-tablet.png" width="147px" height="40px" alt="Логотип">
-          <img class="logo__mobile" src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип">
+        <a href="index.html" class="header__logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.png">
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.png">
+            <img src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип PINK">
+          </picture>
         </a>
         <button class="header__burger" type="button"></button>
       </div>
