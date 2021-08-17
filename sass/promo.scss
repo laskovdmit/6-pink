@@ -1,5 +1,5 @@
 .promo {
-  background-image: url('../img/bg-back-mobile.png');
+  background-image: url('../img/bg-back-mobile.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -19,7 +19,7 @@
   width: 320px;
   height: 314px;
 
-  background-image: url('/img/iphone-hand-mobile1x.png');
+  background-image: url('/img/iphone-hand-mobile1x.webp');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -33,19 +33,17 @@
   display: none;
 }
 
-
-
 @media (min-width: $tablet-width) {
   .promo {
-    background-image: url('../img/bg-back-tablet.jpg');
+    background-image: url('../img/bg-back-tablet.webp');
   }
 
   .promo__wrapper {
-    min-height: 684px;
+    min-height: 729px;
   }
 
   .promo__img-phone {
-    background-image: url('/img/iphone-hand.png');
+    background-image: url('/img/iphone-hand.webp');
 
     bottom: 0;
     left: calc(50% - 330px);
@@ -72,23 +70,25 @@
   }
 }
 
-
-
 @media (min-width: $desktop-width) {
-
   .promo__wrapper {
-    min-height: 750px;
+    min-height: 850px;
     width: 960px;
 
     margin: 0 auto;
   }
 
   .promo {
-    background-image: url('../img/bg-back.jpg');
+    background-image: url('../img/bg-back.webp');
   }
 
   .promo__img-phone {
-    left: 250px;
+    background-image: url('/img/iphone-hand-desktop.webp');
+
+    left: calc(50% - 450px);
+
+    width: 1050px;
+    height: 645px;
   }
 
   .promo__offer {

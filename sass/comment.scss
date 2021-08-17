@@ -4,10 +4,6 @@
   padding: 25px 18px;
 }
 
-// .comment__header {
-//   font: inherit;
-// }
-
 .comment__name {
   font-size: 14px;
 }
@@ -15,11 +11,8 @@
 .comment__posting-time {
   font-size: 12px;
   font-weight: 300;
+  text-transform: uppercase;
 }
-
-// .comment__content {
-//   font: inherit;
-// }
 
 .comment__like {
   margin-top: 18px;
@@ -42,7 +35,7 @@
 
 .comment__like-btn {
   display: none;
- }
+}
 
 .comment__like-count::before {
   content: "";

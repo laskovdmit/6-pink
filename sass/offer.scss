@@ -47,26 +47,6 @@
   align-items: center;
 }
 
-// .offer__platform {
-//   font: inherit;
-// }
-
-// .offer__img {
-//   font: inherit;
-// }
-
-// .offer__img--ios {
-//   font: inherit;
-// }
-
-// .offer__img--android {
-//   font: inherit;
-// }
-
-// .offer__img--windows {
-//   font: inherit;
-// }
-
 .offer__descr {
   text-align: center;
   font-weight: 300;
@@ -94,5 +74,10 @@
 
   .offer__button {
     font-size: 21px;
+    margin-bottom: 60px;
+  }
+
+  .offer__descr {
+    margin-top: 50px;
   }
 }

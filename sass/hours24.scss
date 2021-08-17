@@ -2,20 +2,11 @@
   display: none;
 }
 
-
-// .hours24__descr {
-//   font: inherit;
-// }
-
-
-
-
 @media (min-width: $tablet-width) {
   .hours24 {
     display: block;
 
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding: 55px 20px;
   }
 
   .hours24__wrapper {
@@ -24,7 +15,7 @@
   }
 
   .hours24__img {
-    background-image: url('/img/timer-tablet.png');
+    background-image: url('/img/timer-tablet.webp');
     background-repeat: no-repeat;
     background-position: center;
     width: 238px;
@@ -73,7 +64,7 @@
   }
 
   .hours24__img {
-    background-image: url('/img/timer-desktop.png');
+    background-image: url('/img/timer-desktop.webp');
     width: 298px;
     height: 345px;
 

@@ -49,24 +49,19 @@ a {
   overflow: hidden;
 }
 
-.devider {
-  background-image: url('/img/bg-triangle-white.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.devider svg{
+  display: block;
 
   background-color: $bg-color;
 
   width: 100%;
-  height: 32px;
+  height: auto;
 }
 
-.devider-footer {
+.devider-footer svg{
   position: absolute;
   z-index: 1;
 
-  background-position: center bottom;
-  background-size:auto;
   width: 100%;
   height: auto;
 }
@@ -79,22 +74,9 @@ a {
   padding: 0;
 }
 
-.container {
-  padding: 0 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .devider {
-    height: 54px;
-  }
-}
-
 @media (min-width: $desktop-width) {
-  .devider {
-    height: 94px;
-  }
 
-  .devider-footer {
+  .devider-footer svg{
     max-height: 122px;
   }
 }
