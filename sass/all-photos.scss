@@ -1,5 +1,7 @@
-// .all-photos {
-// }
+.all-photos {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .all-photos__wrapper {
   display: flex;
@@ -19,10 +21,6 @@
   height: auto;
 }
 
-// .all-photos__comment {
-//   font: inherit;
-// }
-
 @media (min-width: $tablet-width) {
   .all-photos {
     padding-top: 30px;
@@ -38,8 +36,6 @@
     width: 300px;
   }
 }
-
-
 
 @media (min-width: $desktop-width) {
   .all-photos__wrapper {

@@ -1,10 +1,10 @@
-.editor {
-  background-color: $bg-color;
-}
-
 .editor__wrapper {
   display: flex;
   flex-direction: column;
+  background-color: $bg-color;
+
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .editor__window {
@@ -20,53 +20,90 @@
   margin: 0 auto;
 }
 
-// .editor__form {
-//   font: inherit;
-// }
-
 .editor__tools {
   padding-top: 20px;
   padding-bottom: 30px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+.editor__crop svg,
+.editor__color svg{
+  width: 48px;
+  height: 48px;
+  fill: $main-color-30;
+}
+
+.editor__bright svg{
+  width: 32px;
+  height: 32px;
+  fill: $main-color-30;
+}
+
+.editor__tool input:checked + svg {
+  fill: $second-color;
+}
+
+.editor__tool:hover svg {
+  fill: rgb(40, 54, 69, 0.5);
+}
+
+.editor__tool--radio {
+  display: none;
 }
 
 .editor__size {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-bottom: 1px solid #dddfe0;
 
+  margin: 0 -20px;
   padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-// .editor__crop {
-//   font: inherit;
-// }
+.editor__slider {
+  -webkit-appearance: none;
+  cursor: pointer;
 
-// .editor__crop-label {
-//   font: inherit;
-// }
+  width: 100%;
+  height: 2px;
+  outline: none;
+  background-color: $main-color;
 
-// .editor__color {
-//   font: inherit;
-// }
+  &::-webkit-slider-thumb {
+  -webkit-appearance: none;
 
-// .editor__color-label {
-//   font: inherit;
-// }
+  width: 14px;
+  height: 14px;
+  background-color: $bg-color;
+  border: 2px solid $second-color;
+  border-radius: 50%;
+  }
 
-// .editor__bright {
-//   font: inherit;
-// }
+  &::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    background-color: $bg-color;
+    border: 2px solid $second-color;
+    border-radius: 50%;
+  }
 
-// .editor__bright-label {
-//   font: inherit;
-// }
+  &:active::-webkit-slider-thumb {
+    background-color: $second-color;
+  }
+
+  &:active::-moz-range-thumb {
+    background-color: $second-color;
+  }
+}
+
+.editor__slider--tablet {
+  display: none;
+}
 
 .editor__buttons {
-  border-top: 1px solid #dddfe0;
   padding: 38px 0;
 }
 
@@ -107,20 +144,17 @@
     color: #dddfe0;
 
     &:hover {
+      background-color: inherit;
       border-color: $main-color-30;
       color: $main-color-30;
     }
 
     &:active {
-      background-color: $main-color-30;
+      background-color: #b5b9be;
+      border-color:#b5b9be;
       color: rgb(255, 255, 255, 0.3);
     }
   }
-}
-
-.editor__container {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -137,12 +171,80 @@
     margin: 0 auto;
   }
 
+  .editor__img {
+    width: 300px;
+    height: 400px
+  }
+
   .editor__form {
-    margin: 0 auto;
+    padding-right: 25px;
+    padding-left: 45px;
+  }
+
+  .editor__tools {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .editor__tool {
+    width: 100%;
+    min-height: 24px;
+
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .editor__tool svg {
+    width: 30px;
+    height: 30px;
+    fill: $second-color;
+  }
+
+  .editor__bright svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .editor__tool:hover svg {
+    fill: $second-color;
+  }
+
+  .editor__size--mobile {
+    display: none;
+  }
+
+  .editor__slider--tablet {
+    display: block;
+    flex-grow: 1;
+
+    border: none;
+    padding: 0;
+    margin-left: 25px;
+  }
+
+  .editor__buttons {
+    width: 100%;
+    padding: 0;
+    padding-top: 65px;
+  }
+
+  .editor__button {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+
+    &--post {
+      margin-bottom: 25px;
+    }
   }
 }
-
-
 
 @media (min-width: $desktop-width) {
   .editor__wrapper {
@@ -151,9 +253,38 @@
     padding: 60px 80px;
   }
 
-  .editor__img {
-    background-color: #555;
-    width: 300px;
-    height: 400px;
+  .editor__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .editor__tool svg {
+    width: 48px;
+    height: 48px;
+    fill: $second-color;
+  }
+
+  .editor__bright svg {
+    width: 32px;
+    height: 32px;
+    fill: $second-color;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .editor__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .editor__button {
+    min-width: 180px;
+
+    &--post {
+      margin-bottom: 0;
+      margin-right: 45px;
+    }
   }
 }

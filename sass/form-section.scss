@@ -16,7 +16,6 @@
   display: none;
 }
 
-
 @media (min-width: $tablet-width) {
   .form-section {
     padding-top: 90px;
@@ -33,11 +32,10 @@
   }
 
   .form-section__form {
-    padding-top: 30px;
+    padding-top: 70px;
   }
 
 }
-
 
 @media (min-width: $desktop-width) {
   .form-section__subtitle {

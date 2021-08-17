@@ -29,25 +29,13 @@
   &:active {
     border-color: $main-color-10;
 
-    .social__item-img {
-      fill: $second-color-30;
-    }
+  & svg{
+    fill: $second-color-30;
+  }
 
   }
 }
 
-.social__item-img {
+.social__item svg{
   fill: $second-color;
 }
-
-// .social__item-img--twitter {
-//   font: inherit;
-// }
-
-// .social__item-img--facebook {
-//   font: inherit;
-// }
-
-// .social__item-img--youtube {
-//   font: inherit;
-// }

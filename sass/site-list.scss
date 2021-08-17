@@ -7,7 +7,7 @@
   text-align: center;
   color: #ffffff;
 
-  width: calc(100% - 40px);
+  width: 100%;
 
   padding-top: 20px;
   padding-bottom: 20px;
@@ -27,7 +27,9 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
+    width: 700px;
     display: flex;
+    justify-content: space-between;
   }
 
   .site-list__item {

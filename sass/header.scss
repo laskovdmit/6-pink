@@ -8,8 +8,7 @@
   background-color: $main-color;
   box-shadow: 0 1px 0 #000;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   margin-bottom: 1px;
 
   display: flex;
@@ -111,6 +110,11 @@ background-color: $second-color-30;
   .header__logo img{
     width: 147px;
     height: 40px;
+  }
+
+  .header__wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
