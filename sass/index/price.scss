@@ -1,3 +1,8 @@
+.price {
+  display: flex;
+  justify-content: center;
+}
+
 .price tr {
   display: flex;
 }
@@ -86,11 +91,12 @@
 
 .price__toggles {
   padding: 40px 0;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .price {
-    margin-left: 0;
+    display: table;
   }
 
   .price__type {

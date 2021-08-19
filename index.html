@@ -9,20 +9,20 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
-  <header class="header">
-    <div class="header__container header--opened">
-      <div class="header__wrapper">
+  <header class="header header--opened">
+    <div class="header__container">
+      <div class="header__wrapper header__wrapper--nojs">
         <a href="index.html" class="header__logo">
           <picture>
             <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.webp">
             <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.webp">
-            <img src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип PINK">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип PINK">
           </picture>
         </a>
-        <button class="header__burger" type="button"></button>
+        <button class="header__burger header__burger--nojs" type="button"></button>
       </div>
       <nav class="header__navigation">
-        <ul class="navigation__list site-list">
+        <ul class="site-list">
           <li class="site-list__item site-list__item--active subtitle"><a href="index.html">Главная</a></li>
           <li class="site-list__item subtitle"><a href="photo.html">Фотографии</a></li>
           <li class="site-list__item subtitle"><a href="form.html">Конкурс</a></li>
@@ -37,23 +37,25 @@
         <div class="promo__img-phone"></div>
         <div class="promo__offer offer">
           <h2 class="promo__offer-title title title--center">Взгляните на жизнь иначе!</h2>
-          <button class="offer__button button subtitle" type="button">Скачать приложение</button>
+          <a href="https://play.google.com/store" target="_blank">
+            <button class="offer__button button subtitle">Скачать приложение</button>
+          </a>
           <ul class="offer__platform-list">
-            <li class="offer__platform">
-              <div class="offer__img offer__img--ios">
-                <include src="img/logo-apple.svg"></include>
-              </div>
-            </li>
-            <li class="offer__platform">
-              <div class="offer__img offer__img--android">
-                <include src="img/logo-android.svg"></include>
-              </div>
-            </li>
-            <li class="offer__platform">
-              <div class="offer__img offer__img--windows">
-                <include src="img/logo-microsoft.svg"></include>
-              </div>
-            </li>
+            <a href="https://www.apple.com/ru/store" target="_blank">
+              <li class="offer__platform">
+                  <include src="img/logo-apple.svg"></include>
+              </li>
+            </a>
+            <a href="https://play.google.com/store/" target="_blank">
+              <li class="offer__platform">
+                  <include src="img/logo-android.svg"></include>
+              </li>
+            </a>
+            <a href="https://www.microsoft.com/ru-ru/store/apps/windows" target="_blank">
+              <li class="offer__platform">
+                  <include src="img/logo-microsoft.svg"></include>
+              </li>
+            </a>
           </ul>
           <p class="offer__descr">Доступно для IPhone, IPad, Android,<br> Windows Phone, OS X, Windows 8</p>
         </div>
@@ -70,24 +72,24 @@
         <ul class="advantages__list">
           <li class="advantages__item">
             <div class="advantages__item-wrapper">
-              <img class="advantages__item-img" src="/img/iphonescreen1.webp" width="186px" height="382" alt="Серый экран">
-              <img class="advantages__item-layer" src="img/layer.webp" width="294px" height="17px" alt="Серый экран">
+              <img class="advantages__item-img" src="/img/iphonescreen1.webp" width="186" height="382" alt="Серый экран">
+              <img class="advantages__item-layer" src="img/layer.webp" width="294" height="17" alt="Серый экран">
             </div>
             <h3 class="advantages__item-subtitle subtitle subtitle--center">Поднимает настроение</h3>
             <p class="advantages__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item">
             <div class="advantages__item-wrapper">
-              <img class="advantages__item-img" src="/img/iphonescreen2.webp" width="186px" height="382" alt="Яркий экран">
-              <img class="advantages__item-layer" src="img/layer.webp" width="294px" height="17px" alt="Яркий экран">
+              <img class="advantages__item-img" src="/img/iphonescreen2.webp" width="186" height="382" alt="Яркий экран">
+              <img class="advantages__item-layer" src="img/layer.webp" width="294" height="17" alt="Яркий экран">
             </div>
             <h3 class="advantages__item-subtitle subtitle subtitle--center">Меняет мир вокруг</h3>
             <p class="advantages__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
             <div class="advantages__item-wrapper">
-              <img class="advantages__item-img" src="/img/iphonescreen3.webp" width="186px" height="382" alt="Экран с улыбкой">
-              <img class="advantages__item-layer" src="img/layer.webp" width="294px" height="17px" alt="Экран с улыбкой">
+              <img class="advantages__item-img" src="/img/iphonescreen3.webp" width="186" height="382" alt="Экран с улыбкой">
+              <img class="advantages__item-layer" src="img/layer.webp" width="294" height="17" alt="Экран с улыбкой">
             </div>
             <h3 class="advantages__item-subtitle subtitle subtitle--center">Заводит новых друзей</h3>
             <p class="advantages__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
@@ -113,20 +115,36 @@
       <div class="reviews__slider slider">
         <button class="reviews__prev"></button>
         <div class="reviews__wrapper slider__list">
-          <div class="reviews__item slider__item">
-            <img class="reviews__img" src="/img/quotes.webp" width="79px" height="63px" alt="Кавычки">
+          <div class="reviews__item slider__item reviews__item--active">
+            <img class="reviews__img" src="/img/quotes.webp" width="79" height="63" alt="Кавычки">
             <div class="reviews__persone ">
               <h2 class="subtitle reviews__persone-name subtitle--center">Николай Петров</h2>
               <p class="reviews__persone-info">25 лет, водитель трамвая</p>
             </div>
             <p class="reviews__descr">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сервые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </div>
+          <div class="reviews__item slider__item reviews__item--disactive">
+            <img class="reviews__img" src="/img/quotes.webp" width="79" height="63" alt="Кавычки">
+            <div class="reviews__persone ">
+              <h2 class="subtitle reviews__persone-name subtitle--center">Нина Петровна</h2>
+              <p class="reviews__persone-info">25 лет, водитель трамвая</p>
+            </div>
+            <p class="reviews__descr">"А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </div>
+          <div class="reviews__item slider__item reviews__item--disactive">
+            <img class="reviews__img" src="/img/quotes.webp" width="79" height="63" alt="Кавычки">
+            <div class="reviews__persone ">
+              <h2 class="subtitle reviews__persone-name subtitle--center">Петр Петрович</h2>
+              <p class="reviews__persone-info">25 лет, водитель трамвая</p>
+            </div>
+            <p class="reviews__descr">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сервые вещи!"</p>
+          </div>
         </div>
         <button class="reviews__next"></button>
         <div class="reviews__toggles slider__toggles">
-          <button class="button slider__toggle slider__toggle--active"></button>
-          <button class="button slider__toggle"></button>
-          <button class="button slider__toggle"></button>
+          <button class="button slider__toggle reviews__toggle slider__toggle--active"></button>
+          <button class="button slider__toggle reviews__toggle"></button>
+          <button class="button slider__toggle reviews__toggle"></button>
         </div>
       </div>
     </section>
@@ -199,9 +217,9 @@
           </tr>
         </table>
         <div class="price__toggles slider__toggles">
-          <button class="slider__toggle"></button>
-          <button class="slider__toggle slider__toggle--active"></button>
-          <button class="slider__toggle"></button>
+          <button class="slider__toggle price__toggle"></button>
+          <button class="slider__toggle price__toggle slider__toggle--active"></button>
+          <button class="slider__toggle price__toggle"></button>
         </div>
       </div>
     </section>
@@ -211,15 +229,15 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <h3 class="contacts__subtitle subtitle subtitle--center">Звоните:</h3>
-            <a class="title contacts__title" href="#">+7 (812) 555-66-66</a>
+            <a class="title contacts__title" href="tel:+79871428555">+7 (987) 142-85-55</a>
           </li>
           <li class="contacts__item contacts__item--side">
             <h3 class="contacts__subtitle subtitle subtitle--center">Пишите:</h3>
-            <a class="title contacts__title" href="#">laskovdmit@gmail.com</a>
+            <a class="title contacts__title" href="mailto:laskovdmit@gmail.com">laskovdmit@gmail.com</a>
           </li>
           <li class="contacts__item">
             <h3 class="contacts__subtitle subtitle subtitle--center">Приезжайте в гости:</h3>
-            <a class="title contacts__title" href="#">ул. Большая Конюшенная, 19/8</a>
+            <a class="title contacts__title" target="_blank" href="https://yandex.ru/maps/?um=constructor%3A504c6f0fc5b4c3ce8e8f8a76aea1866107cd4a998ba7f31b27a19e1a7f1046be&source=constructorLink">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
       </div>
@@ -227,6 +245,7 @@
         <include src="img/bg-triangle-white-footer.svg"></include>
       </div>
       <div class="contacts__map">
+        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A504c6f0fc5b4c3ce8e8f8a76aea1866107cd4a998ba7f31b27a19e1a7f1046be&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
         <div class="contacts__map-icon">
           <include src="img/icon-map-marker.svg"></include>
         </div>
@@ -239,25 +258,32 @@
         <include src="img/logo-pink-blue-mobile.svg"></include>
       </a>
       <ul class="social">
-        <li class="social__item">
+        <a href="https://twitter.com/" target="_blank">
+          <li class="social__item">
             <include src="img/icon-twitter.svg"></include>
-        </li>
-        <li class="social__item">
+          </li>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <li class="social__item">
             <include src="img/icon-facebook.svg"></include>
-        </li>
-        <li class="social__item">
+          </li>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <li class="social__item">
             <include src="img/icon-youtube.svg"></include>
-        </li>
+          </li>
+        </a>
       </ul>
-      <div class="copyright">
-        <p class="copyright__title">Разработано</p>
-        <div class="copyright__logo">
-          <include src="img/logo-htmlacademy.svg"></include>
+      <a href="https://vk.com/dmitry345" target="_blank">
+        <div class="copyright">
+            <p class="copyright__title">Разработано</p>
+            <include src="img/logo-htmlacademy.svg"></include>
         </div>
-      </div>
+      </a>
     </div>
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/script-index.js"></script>
 </body>
 </html>

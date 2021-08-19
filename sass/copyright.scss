@@ -4,20 +4,24 @@
   justify-content: center;
 
   &:hover {
-    .copyright__logo svg{
+    .copyright svg{
       fill: $main-color;
     }
   }
 
   &:active {
-    .copyright__logo svg{
+    .copyright svg{
       fill: $main-color-30;
     }
   }
 
 }
 
-.copyright__logo svg{
+.copyright__title {
+  margin: 0;
+}
+
+.copyright svg{
   margin-left: 15px;
   fill: $second-color;
 }

@@ -9,20 +9,20 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
-  <header class="header">
-    <div class="header__container header--opened">
-      <div class="header__wrapper">
+  <header class="header header--opened">
+    <div class="header__container">
+      <div class="header__wrapper header__wrapper--nojs">
         <a href="index.html" class="header__logo">
           <picture>
             <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.webp">
             <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.webp">
-            <img src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип PINK">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип PINK">
           </picture>
         </a>
-        <button class="header__burger" type="button"></button>
+        <button class="header__burger header__burger--nojs" type="button"></button>
       </div>
       <nav class="header__navigation">
-        <ul class="navigation__list site-list">
+        <ul class="site-list">
           <li class="site-list__item subtitle"><a href="index.html">Главная</a></li>
           <li class="site-list__item subtitle"><a href="photo.html">Фотографии</a></li>
           <li class="site-list__item site-list__item--active subtitle"><a href="form.html">Конкурс</a></li>
@@ -41,11 +41,11 @@
         <div class="form__cal form__cal--name form__cal--no-padding">
           <label class="form__label" for="surname">
             ФАМИЛИЯ:
-            <input class="form__input" type="text" id="surname" placeholder="Укажите фамилию *" name="surname" required>
+            <input class="form__input" type="text" id="surname" placeholder="Укажите фамилию *" name="surname">
           </label>
           <label class="form__label" for="name">
             ИМЯ:
-            <input class="form__input" type="text" id="name" placeholder="Укажите ваше имя *" name="name" required>
+            <input class="form__input" type="text" id="name" placeholder="Укажите ваше имя *" name="name">
           </label>
           <label class="form__label" for="patronymic">
             ОТЧЕСТВО:
@@ -72,7 +72,7 @@
           <label class="form__label form__label--phone form__label--contacts" for="phone-number">НОМЕР ТЕЛЕФОНА
           <input class="form__input form__input--contacts" type="tel" id="phone-number" placeholder="Номер, пожалуйста" name="phone"></label>
           <label class="form__label form__label--email form__label--contacts" for="email">АДРЕС ПОЧТЫ
-          <input class="form__input form__input--contacts" type="text" id="email" placeholder="Введите почту *" name="email" required></label>
+          <input class="form__input form__input--contacts" type="text" id="email" placeholder="Введите почту *" name="email"></label>
         </div>
         <div class="form__cal form__cal--grey form__cal--platform form__cal--border form__cal--wide">
           <p class="form__subtitle">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</p>
@@ -101,25 +101,54 @@
         <include src="img/logo-pink-blue-mobile.svg"></include>
       </a>
       <ul class="social">
-        <li class="social__item">
+        <a href="https://twitter.com/" target="_blank">
+          <li class="social__item">
             <include src="img/icon-twitter.svg"></include>
-        </li>
-        <li class="social__item">
+          </li>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <li class="social__item">
             <include src="img/icon-facebook.svg"></include>
-        </li>
-        <li class="social__item">
+          </li>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <li class="social__item">
             <include src="img/icon-youtube.svg"></include>
-        </li>
+          </li>
+        </a>
       </ul>
-      <div class="copyright">
-        <p class="copyright__title">Разработано</p>
-        <div class="copyright__logo">
-          <include src="img/logo-htmlacademy.svg"></include>
+      <a href="https://vk.com/dmitry345" target="_blank">
+        <div class="copyright">
+            <p class="copyright__title">Разработано</p>
+            <include src="img/logo-htmlacademy.svg"></include>
         </div>
-      </div>
+      </a>
     </div>
   </footer>
+  <section class="popup popup--done">
+    <div class="popup__wrapper">
+      <div class="popup__text-section">
+        <h2 class="popup__subtitle subtitle subtitle--center">Ваша заявка отправлена</h2>
+        <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      </div>
+      <div class="popup__btn-section">
+        <button class="popup__button popup__button--wide button subtitle" type="button">Закрыть окно</button>
+      </div>
+    </div>
+  </section>
+  <section class="popup popup--error">
+    <div class="popup__wrapper">
+      <div class="popup__text-section">
+        <h2 class="popup__subtitle subtitle subtitle--center">Что-то пошло<br> не так</h2>
+        <p class="popup__text">Проверьте поля выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="popup__btn-section popup__btn-section--bgnone">
+        <button class="popup__button button subtitle" type="button">ОК</button>
+      </div>
+    </div>
+  </section>
 
   <script src="js/script.js"></script>
+  <script src="js/script-form.js"></script>
 </body>
 </html>

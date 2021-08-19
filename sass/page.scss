@@ -1,5 +1,5 @@
 .page {
-  min-width: $mobile-width;
+  min-width: $mobile-width - 20px;
 }
 
 .page__main {
@@ -42,7 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .page {
-    min-width: $tablet-width;
+    min-width: $tablet-width - 20px;
   }
 
   .page__main {

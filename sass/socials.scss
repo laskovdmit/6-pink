@@ -13,7 +13,8 @@
   width: 45px;
   height: 45px;
 
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
 
   border: 3px solid $main-color-10;
   border-radius: 50%;
@@ -29,13 +30,18 @@
   &:active {
     border-color: $main-color-10;
 
-  & svg{
-    fill: $second-color-30;
+    & svg{
+      fill: $second-color-30;
+    }
   }
 
+  & svg {
+    fill: $second-color;
   }
 }
 
-.social__item svg{
-  fill: $second-color;
+@media (min-width: $tablet-width) {
+  .social {
+    margin: 0;
+  }
 }

@@ -48,6 +48,7 @@
 
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
 }
+
 .header--closed .header__burger:hover::before {
   background-color: $second-color;
   box-shadow: 0 10px 0 0 $second-color, 0 20px 0 0 $second-color;
@@ -106,6 +107,14 @@ background-color: $second-color-30;
   background-color: rgb(0, 0, 0, 0.3);
 }
 
+.header--opened .header__burger--nojs {
+  display: none;
+}
+
+.header__wrapper--nojs {
+  justify-content: center;
+}
+
 @media (min-width: $tablet-width) {
   .header__logo img{
     width: 147px;
@@ -131,15 +140,11 @@ background-color: $second-color-30;
 
   .header {
     background-color: rgb(0, 0, 0, 0.3);
-
-    height: 110px;
-
-    display: flex;
-    align-items: center;
   }
 
   .header__container {
     width: 960px;
+    height: 110px;
     margin: 0 auto;
 
     display: flex;
@@ -153,5 +158,9 @@ background-color: $second-color-30;
 
   .header__burger {
     display: none;
+  }
+
+  .header__navigation {
+    width: 700px;
   }
 }

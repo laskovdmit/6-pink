@@ -9,20 +9,20 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
-  <header class="header">
-    <div class="header__container header--opened">
-      <div class="header__wrapper">
+  <header class="header header--opened">
+    <div class="header__container">
+      <div class="header__wrapper header__wrapper--nojs">
         <a href="index.html" class="header__logo">
           <picture>
             <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.webp">
             <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.webp">
-            <img src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип PINK">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип PINK">
           </picture>
         </a>
-        <button class="header__burger" type="button"></button>
+        <button class="header__burger header__burger--nojs" type="button"></button>
       </div>
       <nav class="header__navigation">
-        <ul class="navigation__list site-list">
+        <ul class="site-list">
           <li class="site-list__item subtitle"><a href="index.html">Главная</a></li>
           <li class="site-list__item site-list__item--active subtitle"><a href="photo.html">Фотографии</a></li>
           <li class="site-list__item subtitle"><a href="form.html">Конкурс</a></li>
@@ -52,8 +52,8 @@
           </div>
           <div class="panorama-comment__content comment__content">Прыгать или нет? Напишите в комментарии свои совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</div>
           <div class="panorama-comment__like comment__like">
+            <input class="comment__like-btn" type="checkbox" name="like">
             <label class="comment__like-count">
-              <input class="comment__like-btn" type="checkbox" name="like">
               НРАВИТСЯ: 215
             </label>
           </div>
@@ -190,21 +190,24 @@
             <label class="editor__tool editor__crop" for="editor__crop">
               <input class="editor__tool--radio" type="radio" id="editor__crop" name="tools" value="crop">
               <include src="img/icon-editor-crop.svg"></include>
-              <input class="editor__slider--tablet editor__slider" id="editor__slider--crop" type="range" name="editor-slider">
+              <div class="editor__size editor__size--active">
+                <input class="editor__slider editor__slider" id="editor__slider--crop" type="range" name="editor-slider">
+              </div>
             </label>
             <label class="editor__tool editor__color" for="editor__color">
               <input class="editor__tool--radio" type="radio" id="editor__color" name="tools" value="color">
               <include src="img/icon-editor-fill.svg"></include>
-              <input class="editor__slider--tablet editor__slider" id="editor__slider--color" type="range" name="editor-slider">
+              <div class="editor__size">
+                <input class="editor__slider" id="editor__slider--color" type="range" name="editor-slider">
+              </div>
             </label>
             <label class="editor__tool editor__bright" for="editor__bright">
               <input class="editor__tool--radio" type="radio" id="editor__bright" name="tools" value="bright">
               <include src="img/icon-editor-contrast.svg"></include>
-              <input class="editor__slider--tablet editor__slider" id="editor__slider--bright" type="range" name="editor-slider">
+              <div class="editor__size">
+                <input class="editor__slider" id="editor__slider--bright" type="range" name="editor-slider">
+              </div>
             </label>
-          </div>
-          <div class="editor__size editor__size--mobile">
-            <input class="editor__slider" id="editor__slider" type="range" name="editor-slider">
           </div>
           <div class="editor__buttons">
             <button class="editor__button editor__button--post button" type="submit">Запостить</button>
@@ -220,25 +223,32 @@
         <include src="img/logo-pink-blue-mobile.svg"></include>
       </a>
       <ul class="social">
-        <li class="social__item">
+        <a href="https://twitter.com/" target="_blank">
+          <li class="social__item">
             <include src="img/icon-twitter.svg"></include>
-        </li>
-        <li class="social__item">
+          </li>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <li class="social__item">
             <include src="img/icon-facebook.svg"></include>
-        </li>
-        <li class="social__item">
+          </li>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <li class="social__item">
             <include src="img/icon-youtube.svg"></include>
-        </li>
+          </li>
+        </a>
       </ul>
-      <div class="copyright">
-        <p class="copyright__title">Разработано</p>
-        <div class="copyright__logo">
-          <include src="img/logo-htmlacademy.svg"></include>
+      <a href="https://vk.com/dmitry345" target="_blank">
+        <div class="copyright">
+            <p class="copyright__title">Разработано</p>
+            <include src="img/logo-htmlacademy.svg"></include>
         </div>
-      </div>
+      </a>
     </div>
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/script-photo.js"></script>
 </body>
 </html>

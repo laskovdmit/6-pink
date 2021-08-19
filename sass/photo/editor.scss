@@ -22,8 +22,9 @@
 
 .editor__tools {
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -55,12 +56,8 @@
 }
 
 .editor__size {
-  border-bottom: 1px solid #dddfe0;
-
-  margin: 0 -20px;
-  padding-bottom: 25px;
-  padding-left: 40px;
-  padding-right: 40px;
+  display: none;
+  width: 100%;
 }
 
 .editor__slider {
@@ -99,8 +96,20 @@
   }
 }
 
-.editor__slider--tablet {
-  display: none;
+.editor__size--active {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 80%;
+
+  border-bottom: 1px solid #dddfe0;
+
+  margin: 0 -20px;
+  padding-left: calc(10% + 20px);
+  padding-right: calc(10% + 20px);
+  padding-bottom: 25px;
 }
 
 .editor__buttons {
@@ -216,17 +225,25 @@
     fill: $second-color;
   }
 
-  .editor__size--mobile {
-    display: none;
+  .editor__size--active {
+    position: static;
+    width: inherit;
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
   }
 
-  .editor__slider--tablet {
+  .editor__size {
+    display: block;
+    margin-left: 25px;
+  }
+
+  .editor__slider {
     display: block;
     flex-grow: 1;
 
     border: none;
     padding: 0;
-    margin-left: 25px;
   }
 
   .editor__buttons {

@@ -1,0 +1,139 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__wrapper {
+  width: 320px;
+
+  background-color: #fff;
+  box-shadow: 0 7px 15px 0 rgb(0, 0, 0, 0.15) ;
+}
+
+.popup__text-section {
+  padding-top: 40px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.popup__btn-section {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $bg-color;
+}
+
+.popup__btn-section--bgnone {
+  padding-top: 5px;
+  background-color: #fff;
+}
+
+
+.popup__subtitle {
+  color: #000;
+
+  & br {
+    display: none;
+  }
+}
+
+.popup__text {
+  margin: 0;
+  margin-top: 25px;
+
+  text-align: center;
+}
+
+.popup__button {
+  display: block;
+  width: 280px;
+  height: 60px;
+  margin: 0 auto;
+
+  background-color: #2aab6d;
+  border-radius: 2px;
+
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .popup__wrapper {
+    width: 460px;
+  }
+
+  .popup__subtitle {
+    font-size: 30px;
+    line-height: 40px;
+
+    & br {
+      display: block;
+    }
+  }
+
+  .popup__text-section {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .popup__btn-section {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .popup__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .popup__button {
+    width: 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popup__wrapper {
+    width: 780px;
+  }
+
+  .popup__text-section {
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+
+  .popup__btn-section {
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+
+  .popup__btn-section--bgnone {
+    padding-top: 50px;
+    background-color: $bg-color;
+  }
+
+  .popup__subtitle br {
+    display: none;
+  }
+
+  .popup__text {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .popup__button--wide {
+    width: 450px;
+  }
+}
