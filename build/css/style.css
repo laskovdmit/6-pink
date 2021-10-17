@@ -293,7 +293,7 @@ a {
 }
 
 .page__banner {
-  background-image: url("/img/bg-back-mobile.webp");
+  background-image: url("../img/bg-back-mobile.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -725,7 +725,7 @@ a {
   left: 2px;
   width: 35px;
   height: 35px;
-  background-image: url("/img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -905,11 +905,11 @@ a {
   }
 
   .form__label--phone::after {
-    background-image: url("/img/phone.webp");
+    background-image: url("../img/phone.webp");
   }
 
   .form__label--email::after {
-    background-image: url("/img/mail.webp");
+    background-image: url("../img/mail.webp");
   }
 
   .form__input--contacts {
@@ -1095,13 +1095,13 @@ a {
   top: 6px;
   width: 13px;
   height: 12px;
-  background-image: url("/img/icon-heart.svg");
+  background-image: url("../img/icon-heart.svg");
 }
 
 .comment__like-count--like::before {
   width: 13px;
   height: 12px;
-  background-image: url("/img/icon-heart-fill.webp");
+  background-image: url("../img/icon-heart-fill.webp");
 }
 
 @media (min-width: 660px) {
@@ -1146,7 +1146,7 @@ a {
   left: calc(50% - 160px);
   width: 320px;
   height: 314px;
-  background-image: url("/img/iphone-hand-mobile1x.webp");
+  background-image: url("../img/iphone-hand-mobile1x.webp");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1170,7 +1170,7 @@ a {
   }
 
   .promo__img-phone {
-    background-image: url("/img/iphone-hand.webp");
+    background-image: url("../img/iphone-hand.webp");
     bottom: 0;
     left: calc(50% - 330px);
     width: 640px;
@@ -1204,7 +1204,7 @@ a {
   }
 
   .promo__img-phone {
-    background-image: url("/img/iphone-hand-desktop.webp");
+    background-image: url("../img/iphone-hand-desktop.webp");
     left: calc(50% - 450px);
     width: 1050px;
     height: 645px;
@@ -1264,7 +1264,7 @@ a {
 }
 
 .advantages__img {
-  background-image: url("/img/iphonescreen3mobile.webp");
+  background-image: url("../img/iphonescreen3mobile.webp");
   background-repeat: no-repeat;
   background-position: top;
   width: 157px;
@@ -1306,7 +1306,7 @@ a {
   }
 
   .advantages__img {
-    background-image: url("/img/iphonescreen3tablet.webp");
+    background-image: url("../img/iphonescreen3tablet.webp");
     width: 268px;
     height: 547px;
   }
@@ -1392,7 +1392,7 @@ a {
   }
 
   .hours24__img {
-    background-image: url("/img/timer-tablet.webp");
+    background-image: url("../img/timer-tablet.webp");
     background-repeat: no-repeat;
     background-position: center;
     width: 238px;
@@ -1434,7 +1434,7 @@ a {
   }
 
   .hours24__img {
-    background-image: url("/img/timer-desktop.webp");
+    background-image: url("../img/timer-desktop.webp");
     width: 298px;
     height: 345px;
     margin-right: 40px;
@@ -1674,7 +1674,7 @@ a {
   left: -2px;
   width: 74px;
   height: 74px;
-  background-image: url("/img/bg-hit-tablet.svg");
+  background-image: url("../img/bg-hit-tablet.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1815,7 +1815,7 @@ a {
   .price__type--active::before {
     width: 74px;
     height: 74px;
-    background-image: url("/img/bg-hit.svg");
+    background-image: url("../img/bg-hit.svg");
   }
 
   .price__type--active::after {
@@ -2042,7 +2042,7 @@ a {
   }
 }
 .panorama__photo {
-  background-image: url("/img/panorama-desktop.webp");
+  background-image: url("../img/panorama-desktop.webp");
   background-repeat: no-repeat;
   background-position: center;
   max-width: 660px;
@@ -2074,7 +2074,7 @@ a {
 
 @media (min-width: 660px) {
   .panorama__photo {
-    background-image: url("/img/panorama-tablet.webp");
+    background-image: url("../img/panorama-tablet.webp");
     background-size: cover;
     max-width: 100%;
     height: 510px;
@@ -2111,7 +2111,7 @@ a {
 }
 @media (min-width: 960px) {
   .panorama__photo {
-    background-image: url("/img/panorama-desktop.webp");
+    background-image: url("../img/panorama-desktop.webp");
     height: 506px;
     margin: 0 auto;
   }

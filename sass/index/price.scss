@@ -36,7 +36,7 @@
   width: 74px;
   height: 74px;
 
-  background-image: url("/img/bg-hit-tablet.svg");
+  background-image: url("../img/bg-hit-tablet.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -187,7 +187,7 @@
     width: 74px;
     height: 74px;
 
-    background-image: url("/img/bg-hit.svg");
+    background-image: url("../img/bg-hit.svg");
   }
 
   .price__type--active::after {

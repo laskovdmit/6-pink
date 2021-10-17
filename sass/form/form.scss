@@ -113,7 +113,7 @@
   width: 35px;
   height: 35px;
 
-  background-image: url('/img/icon-tick.svg');
+  background-image: url('../img/icon-tick.svg');
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -321,11 +321,11 @@
   }
 
   .form__label--phone::after {
-    background-image: url('/img/phone.webp');
+    background-image: url('../img/phone.webp');
   }
 
   .form__label--email::after {
-    background-image: url('/img/mail.webp');
+    background-image: url('../img/mail.webp');
   }
 
   .form__input--contacts {

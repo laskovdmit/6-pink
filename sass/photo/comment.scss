@@ -47,14 +47,14 @@
   width: 13px;
   height: 12px;
 
-  background-image: url('/img/icon-heart.svg');
+  background-image: url('../img/icon-heart.svg');
 }
 
 .comment__like-count--like::before {
   width: 13px;
   height: 12px;
 
-  background-image: url('/img/icon-heart-fill.webp');
+  background-image: url('../img/icon-heart-fill.webp');
 }
 
 @media (min-width: $tablet-width) {

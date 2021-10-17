@@ -1,5 +1,5 @@
 .panorama__photo {
-  background-image: url('/img/panorama-desktop.webp');
+  background-image: url('../img/panorama-desktop.webp');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -34,7 +34,7 @@
 
 @media (min-width: $tablet-width) {
   .panorama__photo {
-    background-image: url('/img/panorama-tablet.webp');
+    background-image: url('../img/panorama-tablet.webp');
     background-size: cover;
 
     max-width: 100%;
@@ -78,7 +78,7 @@
 
 @media (min-width: $desktop-width) {
   .panorama__photo {
-    background-image: url('/img/panorama-desktop.webp');
+    background-image: url('../img/panorama-desktop.webp');
 
     height: 506px;
     margin: 0 auto;

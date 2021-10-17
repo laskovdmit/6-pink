@@ -19,7 +19,7 @@
   width: 320px;
   height: 314px;
 
-  background-image: url('/img/iphone-hand-mobile1x.webp');
+  background-image: url('../img/iphone-hand-mobile1x.webp');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -43,7 +43,7 @@
   }
 
   .promo__img-phone {
-    background-image: url('/img/iphone-hand.webp');
+    background-image: url('../img/iphone-hand.webp');
 
     bottom: 0;
     left: calc(50% - 330px);
@@ -83,7 +83,7 @@
   }
 
   .promo__img-phone {
-    background-image: url('/img/iphone-hand-desktop.webp');
+    background-image: url('../img/iphone-hand-desktop.webp');
 
     left: calc(50% - 450px);
 
