@@ -8,7 +8,6 @@
 css/*.css
 node_modules/
 pink-img/
-build/
 Thumbs.db
 
 .stylelintrc
